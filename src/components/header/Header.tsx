@@ -1,27 +1,25 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import LoginBtn from '@/components/header/LoginBtn';
 import Tab from '@/components/header/Tab';
+import { PATH_NAME, PATH } from '@/routers/path';
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="py-3 lg:px-44 md:px-20 sm:px-10 max-sm:px-4 flex items-end w-full bg-white/40 backdrop-blur-lg fixed z-50 border-b border-neutral-200">
-      <nav className="w-full flex items-center justify-between">
+    <header className={isOpen ? 'header grow' : 'header'}>
+      <div className="w-20">
         <Link to={'/'}>
-          <img
-            src="/header/Logo.png"
-            className="h-5 cursor-pointer"
-            alt="밤프로고"
-          />
+          <img src="/header/Logo.png" />
         </Link>
-        <div className="flex gap-x-5 items-center">
-          <Tab tabName="커리어" />
-          <Tab tabName="밤프 소식" />
-          <Tab tabName="지원하기" />
-          <Tab tabName="밤프인 광장" />
-          <Tab tabName="크레딧" />
-          <LoginBtn />
-        </div>
-      </nav>
+      </div>
+      <div
+        className="flex gap-x-16"
+        onMouseEnter={() => setIsOpen(true)}
+        onMouseLeave={() => setIsOpen(false)}>
+        <Tab title={PATH_NAME.career} tabNames={PATH.career} />
+        <Tab title={PATH_NAME.credit} tabNames={PATH.credit} />
+      </div>
     </header>
   );
 }
