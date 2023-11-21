@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <Header />
-      <div>안녕하세요</div>
+      <div className="w-screen h-screen bg-blue-400">안녕하세요</div>
     </>
   );
 }
