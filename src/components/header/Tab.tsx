@@ -16,7 +16,7 @@ export default function Tab({ title, tabNames }: TabProps) {
           const { name, path } = value;
           return (
             <Link key={name} to={path}>
-              <li className="hover:text-[#FFD600] hover:font-semibold">
+              <li className="hover:text-defaultYellow hover:font-semibold">
                 {name}
               </li>
             </Link>

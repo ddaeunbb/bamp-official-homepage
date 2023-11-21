@@ -8,26 +8,34 @@ export const PATH_NAME = {
 } as const;
 
 export const PATH = {
+  home: '/',
+  careerAward: '/career/award',
+  careerHistory: '/career/history',
+  creditSponsor: '/credit/sponsor',
+  creditBamsaneung: '/credit/bamsaneung',
+} as const;
+
+export const PATH_LIST = {
   career: [
     {
       name: PATH_NAME.award,
-      path: '/career/award',
+      path: PATH.careerAward,
     },
     {
       name: PATH_NAME.history,
-      path: '/career/history',
+      path: PATH.careerHistory,
     },
   ],
   credit: [
     {
       name: PATH_NAME.sponsor,
-      path: '/credit/sponsor',
+      path: PATH.creditSponsor,
     },
     {
       name: PATH_NAME.bamsaneung,
-      path: '/credit/bamsaneung',
+      path: PATH.creditBamsaneung,
     },
   ],
 } as const;
 
-export type PATH_PROP = (typeof PATH)[keyof typeof PATH];
+export type PATH_PROP = (typeof PATH_LIST)[keyof typeof PATH_LIST];
