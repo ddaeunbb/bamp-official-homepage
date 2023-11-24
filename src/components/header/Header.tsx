@@ -8,11 +8,10 @@ export default function Header() {
 
   return (
     <header className={isOpen ? 'header grow' : 'header'}>
-      <div className="w-20">
-        <Link to={PATH.home}>
-          <img src="/header/Logo.png" />
-        </Link>
-      </div>
+      <Link to={PATH.home}>
+        <img className="w-20" src="/header/logo.svg" alt="밤프로고" />
+      </Link>
+
       <div
         className="flex gap-x-16"
         onMouseEnter={() => setIsOpen(true)}
