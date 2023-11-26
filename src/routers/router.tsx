@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from '@/App';
+import Award from '@/pages/Award';
 import Home from '@/pages/home/Home';
 import { PATH } from '@/routers/path';
 
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
       { path: PATH.home, element: <Home /> },
       {
         path: PATH.careerAward,
-        lazy: () => import('@/pages/CareerAward'),
+        element: <Award />,
       },
       {
         path: PATH.careerHistory,
