@@ -11,7 +11,7 @@ const router = createBrowserRouter([
       { path: PATH.home, element: <Home /> },
       {
         path: PATH.careerAward,
-        lazy: () => import('@/pages/CareerAward'),
+        lazy: () => import('@/pages/careerAward/CareerAward'),
       },
       {
         path: PATH.careerHistory,
