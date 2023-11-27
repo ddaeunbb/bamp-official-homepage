@@ -12,7 +12,7 @@ export default function FourthSection() {
       <div className="flex gap-x-10 justify-center mt-10 max-lg:flex-col max-lg:gap-y-10 max-lg:items-center">
         <div className="w-72 h-max flex flex-col gap-y-5">
           <img
-            src="/public/home/다양한-공모전-경험.png"
+            src="/home/다양한-공모전-경험.png"
             alt="다양한 공모전을 하는 밤프인의 모습"
           />
           <h2 className="text-xl font-bold">다양한 공모전 경험</h2>
@@ -22,7 +22,7 @@ export default function FourthSection() {
         </div>
         <div className="w-72 h-max flex flex-col gap-y-5">
           <img
-            src="/public/home/알찬-커리큘럼.png"
+            src="/home/알찬-커리큘럼.png"
             alt="다양한 커리큘럼에 참여하는 밤프인의 모습"
           />
           <h2 className="text-xl font-bold">알찬 커리큘럼</h2>
@@ -30,7 +30,7 @@ export default function FourthSection() {
         </div>
         <div className="w-72 h-max flex flex-col gap-y-5">
           <img
-            src="/public/home/즐거운-추억.png"
+            src="/home/즐거운-추억.png"
             alt="다같이 놀고있는 밤프인의 모습"
           />
           <h2 className="text-xl font-bold">즐거운 추억</h2>
