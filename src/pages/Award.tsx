@@ -3,6 +3,7 @@ import Award2021 from './career/Award2021';
 import Award2022 from './career/Award2022';
 import Award2023 from './career/Award2023';
 import AwardButton from './career/AwardButton';
+import LastSection from './home/section/LastSection';
 import Horizon from './Horizon';
 import { PATH } from '@/routers/path';
 
@@ -33,7 +34,8 @@ export default function Award() {
       <Award2021></Award2021>
       <Horizon></Horizon>
       <AwardButton></AwardButton>
-      <div className="h-96"></div>
+      <div className="h-24"></div>
+      <LastSection />
     </div>
   );
 }
