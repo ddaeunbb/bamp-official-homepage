@@ -16,7 +16,7 @@ export default function ThirdSection() {
         src="/home/awardPresent.svg"
         alt="어워드상"
       />
-      <div className="mx-auto text-center flex flex-col gap-y-2 max-sm:gap-y-1 mb-20">
+      <div className="mx-auto text-center flex flex-col gap-y-2 max-sm:gap-y-1 mb-20 max-sm:mb-5">
         <h2 className="font-extrabold text-3xl max-sm:text-2xl">
           다른 어느 곳보다
         </h2>
@@ -25,14 +25,16 @@ export default function ThirdSection() {
         </h2>
       </div>
 
-      <div className="flex flex-col gap-y-14" role="강점들 나열하는 곳">
+      <div
+        className="flex flex-col gap-y-14 max-md:gap-y-32"
+        role="강점들 나열하는 곳">
         <div className="w-screen flex justify-center">
           <div
             className="flex justify-between max-md:flex-col gap-x-32 max-lg:gap-x-10"
             role="첫번째 강점">
             <img
               className="w-96"
-              src="/home/award.gif"
+              src="/home/since2006.gif"
               alt="상을 들고 웃고있는 밤프인"
             />
             <div className="flex flex-col justify-center items-center gap-y-5">
