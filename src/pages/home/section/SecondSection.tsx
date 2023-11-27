@@ -13,7 +13,7 @@ export default function SecondSection() {
         <img
           src="/home/section2.gif"
           alt="밤프영어풀네임"
-          className="max-sm:w-10/12"
+          className="max-sm:w-10/12 w-[30rem]"
         />
       </div>
     </section>
