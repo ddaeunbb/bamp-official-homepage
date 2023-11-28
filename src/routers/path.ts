@@ -18,12 +18,12 @@ export const PATH = {
 export const PATH_LIST = {
   career: [
     {
-      name: PATH_NAME.award,
-      path: PATH.careerAward,
-    },
-    {
       name: PATH_NAME.history,
       path: PATH.careerHistory,
+    },
+    {
+      name: PATH_NAME.award,
+      path: PATH.careerAward,
     },
   ],
   credit: [

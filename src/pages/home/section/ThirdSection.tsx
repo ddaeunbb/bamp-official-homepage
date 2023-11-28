@@ -30,14 +30,14 @@ export default function ThirdSection() {
         role="강점들 나열하는 곳">
         <div className="w-screen flex justify-center">
           <div
-            className="flex justify-between max-md:flex-col gap-x-32 max-lg:gap-x-10"
+            className="gap-x-16 flex justify-between max-md:flex-col max-lg:gap-x-10"
             role="첫번째 강점">
             <img
               className="w-96"
               src="/home/since2006.gif"
               alt="상을 들고 웃고있는 밤프인"
             />
-            <div className="flex flex-col justify-center items-center gap-y-5">
+            <div className="w-96 flex flex-col justify-center items-center gap-y-8 max-md:gap-y-4">
               <picture>
                 <source
                   className="w-72"
@@ -51,7 +51,7 @@ export default function ThirdSection() {
                 />
               </picture>
               <span className="text-lg font-bold">오늘까지 이어진 이야기</span>
-              <button className="block relative">
+              <button className="mt-2 block relative">
                 <MoreBtn />
               </button>
             </div>
@@ -60,9 +60,9 @@ export default function ThirdSection() {
 
         <div className="w-screen flex justify-center">
           <div
-            className="flex justify-between max-md:flex-col gap-x-32 max-lg:gap-x-10"
+            className="flex justify-between max-md:flex-col gap-x-16 max-lg:gap-x-10"
             role="두번째 강점">
-            <div className="flex flex-col justify-center items-center gap-y-5 max-md:hidden">
+            <div className="w-96 flex flex-col justify-center items-center gap-y-8 max-md:hidden">
               <picture>
                 <source
                   className="w-72"
@@ -72,7 +72,7 @@ export default function ThirdSection() {
                 <img className="w-72" src="/home/500people.svg" alt="500명" />
               </picture>
               <span className="text-lg font-bold">밤프와 함께한 사람들</span>
-              <button className="block relative">
+              <button className="mt-2 block relative">
                 <MoreBtn />
               </button>
             </div>
@@ -81,7 +81,7 @@ export default function ThirdSection() {
               src="/home/500people.gif"
               alt="웃고 서있는 두 명의 밤프인"
             />
-            <div className="hidden flex-col justify-center items-center gap-y-5 max-md:flex">
+            <div className="w-96 hidden flex-col justify-center items-center max-md:flex max-md:gap-y-4">
               <picture>
                 <source
                   className="w-72"
@@ -91,7 +91,7 @@ export default function ThirdSection() {
                 <img className="w-72" src="/home/500people.svg" alt="500명" />
               </picture>
               <span className="text-lg font-bold">밤프와 함께한 사람들</span>
-              <button className="block relative">
+              <button className="mt-2 block relative">
                 <MoreBtn />
               </button>
             </div>
@@ -100,19 +100,19 @@ export default function ThirdSection() {
 
         <div className="w-screen flex justify-center">
           <div
-            className="flex justify-between max-md:flex-col gap-x-32 max-lg:gap-x-10"
+            className="flex justify-between max-md:flex-col gap-x-16 max-lg:gap-x-10"
             role="세번째 강점">
             <img
               className="w-96"
               src="/home/award.gif"
               alt="상을 들고 웃고있는 밤프인"
             />
-            <div className="flex flex-col justify-center items-center gap-y-5">
+            <div className="w-96 flex flex-col justify-center items-center gap-y-8 max-md:gap-y-4">
               <img className="w-72" src="/home/200times.svg" alt="200회 이상" />
               <span className="text-lg font-bold">
                 탄탄한 수상이 증명하는 실력
               </span>
-              <Link to={PATH.careerAward}>
+              <Link to={PATH.careerAward} className="mt-2">
                 <MoreBtn />
               </Link>
             </div>
