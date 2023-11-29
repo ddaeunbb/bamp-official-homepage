@@ -1,5 +1,6 @@
-@import './style/header.css';
-@import './style/home.css';
+@import './style/component/header.css';
+@import './style/component/navbtn.css';
+@import './style/page/home.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
