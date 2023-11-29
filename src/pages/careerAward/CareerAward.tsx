@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import MoreBtn from '@/components/button/MoreBtn';
+import Horizon from '@/components/horizon/Horizon';
 import Navbar from '@/components/navbar/Navbar';
 import YearAwardList from '@/components/yearAwardList/YearAwardList';
 import { AWARD_SET } from '@/constants/award-winning-list';
@@ -22,12 +23,12 @@ export function Component() {
         </div>
       </div>
 
-      {RECENT_YEARS.map((year) => (
-        <YearAwardList year={year} awardList={AWARD_SET[year]} />
+      {RECENT_YEARS.map((year, idx) => (
+        <YearAwardList year={year} awardList={AWARD_SET[year]} key={idx} />
       ))}
 
       <div className={isOpen ? 'hidden' : ''}>
-        <hr className="text-lightGray w-[864px] max-lg:w-10/12 max-sm:w-11/12 mx-auto" />
+        <Horizon />
         <button
           type="button"
           className="block mx-auto mt-14"
@@ -37,8 +38,8 @@ export function Component() {
       </div>
 
       <div className={isOpen ? '' : 'hidden'}>
-        {PAST_YEARS.map((year) => (
-          <YearAwardList year={year} awardList={AWARD_SET[year]} />
+        {PAST_YEARS.map((year, idx) => (
+          <YearAwardList year={year} awardList={AWARD_SET[year]} key={idx} />
         ))}
       </div>
     </div>
