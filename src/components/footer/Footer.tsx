@@ -1,6 +1,6 @@
 import { BAMP_LINK } from '@/constants/link';
 
-export default function LastSection() {
+export default function Footer() {
   return (
     <footer className="h-max py-20 bg-neutral-800 flex items-center justify-around max-sm:flex-col">
       <div className="flex flex-col gap-y-1 max-sm:text-center">
@@ -15,7 +15,7 @@ export default function LastSection() {
           <img src="/home/btn-apply.svg" alt="지원하기 버튼" />
         </a>
         <span className="text-neutral-500 mt-10 text-xs max-sm:hidden">
-          @BAMP 20203 All rights reserved
+          @BAMP 2023 All rights reserved
         </span>
       </div>
       <div
@@ -57,7 +57,7 @@ export default function LastSection() {
         </a>
       </div>
       <span className="hidden text-neutral-500 text-xs max-sm:block mt-12">
-        @BAMP 20203 All rights reserved
+        @BAMP 2023 All rights reserved
       </span>
     </footer>
   );

@@ -15,15 +15,15 @@ const router = createBrowserRouter([
       },
       {
         path: PATH.careerHistory,
-        lazy: () => import('@/pages/CareerHistory'),
+        lazy: () => import('@/pages/careerHistory/CareerHistory'),
       },
       {
         path: PATH.creditSponsor,
-        lazy: () => import('@/pages/CreditSponsor'),
+        lazy: () => import('@/pages/creditSponsor/CreditSponsor'),
       },
       {
         path: PATH.creditBamsaneung,
-        lazy: () => import('@/pages/CreditBamsaneung'),
+        lazy: () => import('@/pages/creditBamsaneung/CreditBamsaneung'),
       },
     ],
   },

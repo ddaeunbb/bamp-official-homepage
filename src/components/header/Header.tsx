@@ -4,7 +4,7 @@ import Tab from '@/components/header/Tab';
 import { PATH_NAME, PATH_LIST, PATH } from '@/routers/path';
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <header className={isOpen ? 'header grow' : 'header'}>

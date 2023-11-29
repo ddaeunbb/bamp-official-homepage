@@ -1,41 +1,47 @@
-import { Link } from 'react-router-dom';
-import Award2021 from '@/pages/careerAward/section/Award2021';
-import Award2022 from '@/pages/careerAward/section/Award2022';
-import Award2023 from '@/pages/careerAward/section/Award2023';
-import AwardButton from '@/pages/careerAward/section/AwardButton';
-import LastSection from '@/pages/home/section/LastSection';
-import Horizon from '@/pages/Horizon';
-import { PATH } from '@/routers/path';
+import { useState } from 'react';
+import MoreBtn from '@/components/button/MoreBtn';
+import Horizon from '@/components/horizon/Horizon';
+import Navbar from '@/components/navbar/Navbar';
+import YearAwardList from '@/components/yearAwardList/YearAwardList';
+import { AWARD_SET } from '@/constants/award-winning-list';
+import { RECENT_YEARS, PAST_YEARS } from '@/constants/yearList';
+import { PATH, PATH_NAME } from '@/routers/path';
 
 export function Component() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
-    <div className="pt-24 h-screen">
-      <section className="flex flex-col items-center">
-        <div className="w-screen flex flex-col justify-center items-center">
-          <h2 className="font-extrabold text-2xl max-sm:text-2xl justify-center">
-            커리어
-          </h2>
-          <div className="pt-8 pb-8 justify-center flex">
-            <Link to={PATH.careerHistory}>
-              <button>밤프 히스토리</button>
-            </Link>
-            <div className="mx-2">|</div>
-            <Link to={PATH.careerAward}>
-              <button className="font-extrabold">수상실적</button>
-            </Link>
-          </div>
+    <div className="pb-24 h-max">
+      <Navbar
+        urlArr={[PATH.careerHistory, PATH.careerAward]}
+        tabNameArr={[PATH_NAME.history, PATH_NAME.award]}
+      />
+      <div className="pt-8 w-screen flex justify-center">
+        <img className="w-60" src="/careerAward/careerAward1.svg" />
+        <div className="relative">
+          <img className="w-52" src="/careerAward/careerAward2.svg" />
         </div>
-        <img className="w-3/5" src="/career/screen.svg" alt="수상로고" />
-      </section>
-      <Award2023></Award2023>
-      <Horizon></Horizon>
-      <Award2022></Award2022>
-      <Horizon></Horizon>
-      <Award2021></Award2021>
-      <Horizon></Horizon>
-      <AwardButton></AwardButton>
-      <div className="h-24"></div>
-      <LastSection />
+      </div>
+
+      {RECENT_YEARS.map((year, idx) => (
+        <YearAwardList year={year} awardList={AWARD_SET[year]} key={idx} />
+      ))}
+
+      <div className={isOpen ? 'hidden' : ''}>
+        <Horizon />
+        <button
+          type="button"
+          className="block mx-auto mt-14"
+          onClick={() => setIsOpen(true)}>
+          <MoreBtn />
+        </button>
+      </div>
+
+      <div className={isOpen ? '' : 'hidden'}>
+        {PAST_YEARS.map((year, idx) => (
+          <YearAwardList year={year} awardList={AWARD_SET[year]} key={idx} />
+        ))}
+      </div>
     </div>
   );
 }
