@@ -4,15 +4,11 @@ export default function FirstSection() {
       <div className="relative">
         <picture>
           <source
-            className="center max-sm:w-42"
-            srcSet="/home/main-logo.webp"
-            type="image/webp"
+            className="center max-sm:w-32"
+            srcSet="/home/main-logo.png"
+            media="(max-width: 586px)"
           />
-          <img
-            className="center max-sm:w-42"
-            src="/home/main-logo.svg"
-            alt="메인로고"
-          />
+          <img className="center" src="/home/main-logo.svg" alt="메인로고" />
         </picture>
         <img
           className="w-screen"

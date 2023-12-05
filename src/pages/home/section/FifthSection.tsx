@@ -15,7 +15,7 @@ export default function FifthSection() {
       <div className="flex h-full items-end">
         <picture>
           <source
-            className="w-72"
+            className="w-44"
             srcSet="/home/bamdi.png"
             media="(max-width: 586px)"
           />
