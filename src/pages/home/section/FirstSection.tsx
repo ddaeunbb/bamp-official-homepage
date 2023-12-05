@@ -1,15 +1,10 @@
+import MainLogo from '/public/home/main-logo.svg?react';
 export default function FirstSection() {
   return (
     <section className="bg-defaultYellow" role="intro-page">
       <div className="relative">
-        <picture>
-          <source
-            className="center max-sm:w-10"
-            srcSet="/home/main-logo.png"
-            media="(max-width: 586px)"
-          />
-          <img className="center" src="/home/main-logo.svg" alt="메인로고" />
-        </picture>
+        <MainLogo className="absolute w-96 max-md:w-40 center" />
+
         <img
           className="w-screen"
           src="/home/main-vector.png"
