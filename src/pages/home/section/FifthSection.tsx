@@ -13,14 +13,7 @@ export default function FifthSection() {
         </Link>
       </div>
       <div className="flex h-full items-end">
-        <picture>
-          <source
-            className="w-44"
-            srcSet="/home/bamdi.png"
-            media="(max-width: 586px)"
-          />
-          <img className="w-96" src="/home/bamdi.svg" alt="웃고있는 밤디" />
-        </picture>
+        <img className="w-96 " src="/home/bamdi.svg" alt="웃고있는 밤디" />
       </div>
       <div className="flex flex-col gap-y-1 max-md:hidden">
         <h2 className="text-2xl font-bold">밤프가 끝나도</h2>
