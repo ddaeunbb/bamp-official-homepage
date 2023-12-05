@@ -13,6 +13,11 @@ export default function FifthSection() {
         </Link>
       </div>
       <div className="flex h-full items-end">
+        <source
+          srcSet="/home/bamdi.webp"
+          media="(max-width: 586px)"
+          type="image/webp"
+        />
         <img className="w-96" src="/home/bamdi.svg" alt="웃고있는 밤디" />
       </div>
       <div className="flex flex-col gap-y-1 max-md:hidden">
