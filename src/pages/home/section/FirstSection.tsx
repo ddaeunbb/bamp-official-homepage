@@ -3,8 +3,16 @@ export default function FirstSection() {
     <section className="bg-defaultYellow" role="intro-page">
       <div className="relative">
         <picture>
-          <source srcSet="/home/main-logo.webp" type="image/webp" />
-          <img className="center" src="/home/main-logo.svg" alt="메인로고" />
+          <source
+            className="center max-sm:w-42"
+            srcSet="/home/main-logo.webp"
+            type="image/webp"
+          />
+          <img
+            className="center max-sm:w-42"
+            src="/home/main-logo.svg"
+            alt="메인로고"
+          />
         </picture>
         <img
           className="w-screen"
