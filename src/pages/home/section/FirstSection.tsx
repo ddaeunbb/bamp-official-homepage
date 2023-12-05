@@ -4,7 +4,7 @@ export default function FirstSection() {
       <div className="relative">
         <picture>
           <source
-            className="center max-sm:w-32"
+            className="center max-sm:w-10"
             srcSet="/home/main-logo.png"
             media="(max-width: 586px)"
           />
