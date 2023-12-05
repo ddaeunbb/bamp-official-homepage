@@ -11,11 +11,14 @@ export default function FirstSection() {
           src="/home/main-vector.png"
           alt="둥근하얀장식"
         />
-        <img
-          className="absolute z-20 top-[-25px] w-screen"
-          src="/home/main-image.svg"
-          alt="사람들을 환영하는 밤프인들"
-        />
+        <picture>
+          <source srcSet="/home/main-image.png" media="(max-width: 586px)" />
+          <img
+            className="absolute z-20 top-[-25px] w-screen"
+            src="/home/main-image.svg"
+            alt="사람들을 환영하는 밤프인들"
+          />
+        </picture>
       </div>
     </section>
   );
