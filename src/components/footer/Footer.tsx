@@ -9,7 +9,7 @@ export default function Footer() {
         <a
           className="max-sm:mx-auto"
           target="_blank"
-          href={BAMP_LINK.instagram}
+          href={BAMP_LINK.apply}
           rel="external"
           role="밤프에 지원하는 버튼">
           <img src="/home/btn-apply.svg" alt="지원하기 버튼" />

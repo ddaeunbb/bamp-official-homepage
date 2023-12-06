@@ -5,9 +5,8 @@ interface NavBtnProps {
 
 export default function NavBtn({ tabName, isCurTab }: NavBtnProps) {
   return (
-    <button
-      className={isCurTab ? 'navbtn font-semibold' : 'navbtn font-normal'}>
+    <span className={isCurTab ? 'font-semibold' : 'font-normal'}>
       {tabName}
-    </button>
+    </span>
   );
 }

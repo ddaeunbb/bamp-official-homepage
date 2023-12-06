@@ -9,7 +9,14 @@ export default function Header() {
   return (
     <header className={isOpen ? 'header grow' : 'header'}>
       <Link to={PATH.home}>
-        <img className="w-20" src="/header/Logo.svg" alt="밤프로고" />
+        <picture>
+          <source
+            className="w-20"
+            srcSet="/header/logo.png"
+            media="(max-width: 586px)"
+          />
+          <img className="w-20" src="/header/logo.svg" alt="밤프로고" />
+        </picture>
       </Link>
 
       <div
