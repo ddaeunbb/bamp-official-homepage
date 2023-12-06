@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import BampLogo from '@/assets/header/Logo.svg?react';
 import Tab from '@/components/header/Tab';
 import { PATH_NAME, PATH_LIST, PATH } from '@/routers/path';
 
@@ -9,14 +10,7 @@ export default function Header() {
   return (
     <header className={isOpen ? 'header grow' : 'header'}>
       <Link to={PATH.home}>
-        <picture>
-          <source
-            className="w-20"
-            srcSet="/header/Logo.png"
-            media="(max-width: 586px)"
-          />
-          <img className="w-20" src="/header/Logo.svg" alt="밤프로고" />
-        </picture>
+        <BampLogo className="w-20" />
       </Link>
 
       <div
