@@ -1,3 +1,5 @@
+import HistoryAiFile from '@/assets/history/historyAiFile.svg?react';
+import HistoryImageFile from '@/assets/history/historyImageFile.svg?react';
 import Horizon from '@/components/horizon/Horizon.tsx';
 import Navbar from '@/components/navbar/Navbar';
 import HistoryBirth from '@/pages/careerHistory/HistoryBirth.tsx';
@@ -20,6 +22,11 @@ export function Component() {
       <Horizon />
       <HistoryBirth />
       <HistorySymbol />
+      <div className="pt-8 flex justify-center">
+        <HistoryImageFile />
+        <div className="w-10"></div>
+        <HistoryAiFile />
+      </div>
     </div>
   );
 }

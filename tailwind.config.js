@@ -6,6 +6,7 @@ export default {
       colors: {
         defaultYellow: '#FFD600',
         lightGray: 'C8C8C8',
+        lineLightGray: 'D9D9D9',
       },
     },
   },
