@@ -1,10 +1,10 @@
-import MainLogo from '/public/home/main-logo.svg?react';
+import MainLogo from '@/assets/home/main-logo.svg?react';
+
 export default function FirstSection() {
   return (
     <section className="bg-defaultYellow" role="intro-page">
       <div className="relative">
         <MainLogo className="absolute w-96 max-md:w-40 center" />
-
         <img
           className="w-screen"
           src="/home/main-vector.png"

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Bamdi from '@/assets/home/bamdi.svg?react';
 import MoreBtn from '@/components/button/MoreBtn';
 import { PATH } from '@/routers/path';
 
@@ -13,7 +14,7 @@ export default function FifthSection() {
         </Link>
       </div>
       <div className="flex h-full items-end">
-        <img className="w-96 " src="/home/bamdi.svg" alt="웃고있는 밤디" />
+        <Bamdi className="w-96" />
       </div>
       <div className="flex flex-col gap-y-1 max-md:hidden">
         <h2 className="text-2xl font-bold">밤프가 끝나도</h2>

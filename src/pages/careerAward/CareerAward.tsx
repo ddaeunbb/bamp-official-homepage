@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import CareerAward1 from '@/assets/career/careerAward1.svg?react';
+import CareerAward2 from '@/assets/career/careerAward2.svg?react';
+import CareerAward3 from '@/assets/career/careerAward3.svg?react';
 import MoreBtn from '@/components/button/MoreBtn';
 import Horizon from '@/components/horizon/Horizon';
 import Navbar from '@/components/navbar/Navbar';
@@ -16,10 +19,13 @@ export function Component() {
         urlArr={[PATH.careerHistory, PATH.careerAward]}
         tabNameArr={[PATH_NAME.history, PATH_NAME.award]}
       />
-      <div className="pt-8 w-screen flex justify-center">
-        <img className="w-60" src="/careerAward/careerAward1.svg" />
+      <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
+        <div className="hidden relative max-sm:block mx-auto">
+          <CareerAward3 className="w-52" />
+        </div>
+        <CareerAward1 className="w-60 max-sm:mx-auto max-sm:w-56" />
         <div className="relative">
-          <img className="w-52" src="/careerAward/careerAward2.svg" />
+          <CareerAward2 className="w-52 max-sm:hidden" />
         </div>
       </div>
 
