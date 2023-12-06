@@ -121,22 +121,22 @@ export default function HistorySymbol() {
             <div className="flex h-1/6"></div>
           </div>
           <div className="flex flex-col w-1/2 h-44 border-s-lineLightGray">
-            <div className="flex h-1/6 items-center pt-3">
+            <div className="flex h-1/6 items-center pt-6">
               <h2 className="pl-4"></h2>
               <HistoryMark /> <h2 className="pl-2">색상 규정</h2>
             </div>
             <div className="flex h-4/6 justify-center items-center border-r-2 ">
-              <LogoColor />
+              <LogoColor className="w-4/5" />
             </div>
             <div className="flex h-1/6"></div>
           </div>
           <div className="flex flex-col w-1/2 h-44 border-b-2 border-s-lineLightGray">
-            <div className="flex h-1/6 items-center pt-3">
+            <div className="flex h-1/6 items-center pt-6">
               <h2 className="pl-4"></h2>
               <HistoryMark /> <h2 className="pl-2">폰트 규정</h2>
             </div>
             <div className="flex h-4/6 justify-center items-center">
-              <LogoFont />
+              <LogoFont className="w-4/5" />
             </div>
             <div className="flex h-1/6"></div>
           </div>
