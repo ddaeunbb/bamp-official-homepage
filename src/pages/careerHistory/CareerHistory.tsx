@@ -16,9 +16,9 @@ export function Component() {
       />
       <div className="pt-8 w-screen flex justify-center">
         <div className="relative">
-          <img className="w-52" src="/careerHistory/careerHistory2.svg" />
+          <img className="w-52" src="/src/assets/history/careerHistory2.svg" />
         </div>
-        <img className="w-60" src="/careerHistory/careerHistory1.svg" />
+        <img className="w-60" src="/src/assets/history/careerHistory1.svg" />
       </div>
       <Horizon />
       <HistoryBirth />
