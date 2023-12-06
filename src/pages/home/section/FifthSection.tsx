@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Bamdi from '@/assets/home/bamdi.svg?react';
+import Bamdi from '@/assets/home/main-bamdi.svg?react';
 import MoreBtn from '@/components/button/MoreBtn';
 import { PATH } from '@/routers/path';
 
