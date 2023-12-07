@@ -1,9 +1,8 @@
-import HistoryAiFile from '@/assets/history/historyAiFile.svg?react';
-import HistoryImageFile from '@/assets/history/historyImageFile.svg?react';
 import Horizon from '@/components/horizon/Horizon.tsx';
 import Navbar from '@/components/navbar/Navbar';
 import HistoryBamdi from '@/pages/careerHistory/HistoryBamdi.tsx';
 import HistoryBirth from '@/pages/careerHistory/HistoryBirth.tsx';
+import HistoryDownload from '@/pages/careerHistory/HistoryDownload.tsx';
 import HistorySymbol from '@/pages/careerHistory/HistorySymbol.tsx';
 import { PATH, PATH_NAME } from '@/routers/path';
 
@@ -23,17 +22,9 @@ export function Component() {
       <Horizon />
       <HistoryBirth />
       <HistorySymbol />
-      <div className="pt-8 flex justify-center">
-        <HistoryImageFile />
-        <div className="w-10"></div>
-        <HistoryAiFile />
-      </div>
+      <HistoryDownload />
       <HistoryBamdi />
-      <div className="pt-8 flex justify-center">
-        <HistoryImageFile />
-        <div className="w-10"></div>
-        <HistoryAiFile />
-      </div>
+      <HistoryDownload />
     </div>
   );
 }
