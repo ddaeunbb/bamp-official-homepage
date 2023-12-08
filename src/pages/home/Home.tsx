@@ -1,17 +1,17 @@
-import FifthSection from '@/pages/home/section/FifthSection';
-import FirstSection from '@/pages/home/section/FirstSection';
-import FourthSection from '@/pages/home/section/FourthSection';
-import SecondSection from '@/pages/home/section/SecondSection';
-import ThirdSection from '@/pages/home/section/ThirdSection';
+import BampMerit from '@/pages/home/section/BampMerit';
+import Experiences from '@/pages/home/section/Experiences';
+import Intro from '@/pages/home/section/IntroSection';
+import LinkToBamsaneung from '@/pages/home/section/LinkToBamsaneung';
+import Welcome from '@/pages/home/section/Welcome';
 
 export default function Home() {
   return (
     <div className="pt-14 h-max">
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <FourthSection />
-      <FifthSection />
+      <Welcome />
+      <Intro />
+      <BampMerit />
+      <Experiences />
+      <LinkToBamsaneung />
     </div>
   );
 }

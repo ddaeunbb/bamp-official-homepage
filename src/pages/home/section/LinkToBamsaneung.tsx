@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import Bamdi from '@/assets/home/main-bamdi.svg?react';
+import Bamdi from '@/assets/home/home-main-bamdi.svg?react';
 import MoreBtn from '@/components/button/MoreBtn';
 import { PATH } from '@/routers/path';
 
-export default function FifthSection() {
+export default function LinkToBamsaneung() {
   return (
     <aside className="h-[340px] bg-defaultYellow flex justify-center items-center gap-x-5 max-md:flex-col max-md:h-max max-md:pt-24">
       <div className="hidden flex-col gap-y-1 max-md:flex max-md:items-center text-center">

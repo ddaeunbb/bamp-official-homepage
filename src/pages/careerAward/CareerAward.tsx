@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import CareerAward1 from '@/assets/career/careerAward1.svg?react';
-import CareerAward2 from '@/assets/career/careerAward2.svg?react';
-import CareerAward3 from '@/assets/career/careerAward3.svg?react';
+import AwardGirl from '@/assets/career/award/award-main-img.svg?react';
+import BigSpeechBallon from '@/assets/career/award/award-speechballon-big.svg?react';
+import SmallSpeechBallon from '@/assets/career/award/award-speechballon-small.svg?react';
 import MoreBtn from '@/components/button/MoreBtn';
 import Horizon from '@/components/horizon/Horizon';
 import Navbar from '@/components/navbar/Navbar';
@@ -21,11 +21,11 @@ export function Component() {
       />
       <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
         <div className="hidden relative max-sm:block mx-auto">
-          <CareerAward3 className="w-52" />
+          <SmallSpeechBallon className="w-52" />
         </div>
-        <CareerAward1 className="w-60 max-sm:mx-auto max-sm:w-56" />
+        <AwardGirl className="w-60 max-sm:mx-auto max-sm:w-56" />
         <div className="relative">
-          <CareerAward2 className="w-52 max-sm:hidden" />
+          <BigSpeechBallon className="w-52 max-sm:hidden" />
         </div>
       </div>
 

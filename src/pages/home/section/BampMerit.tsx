@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import MoreBtn from '@/components/button/MoreBtn';
 import { PATH } from '@/routers/path';
 
-export default function ThirdSection() {
+export default function BampMerit() {
   // rel="tag"
   return (
     <main className="py-32 relative" role="밤프만의 강점소개">
