@@ -1,4 +1,4 @@
-export default function SecondSection() {
+export default function Intro() {
   return (
     <section
       className="bg-defaultYellow h-[800px] py-32 max-sm:h-[700px]"

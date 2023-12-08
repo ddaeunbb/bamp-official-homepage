@@ -1,6 +1,6 @@
-import MainLogo from '@/assets/home/main-logo.svg?react';
+import MainLogo from '@/assets/home/home-main-logo.svg?react';
 
-export default function FirstSection() {
+export default function Welcome() {
   return (
     <section className="bg-defaultYellow" role="intro-page">
       <div className="relative">

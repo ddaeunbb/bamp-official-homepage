@@ -1,4 +1,4 @@
-import CareerBamdi from '@/assets/career/bamdi-career.svg?react';
+import CareerBamdi from '@/assets/career/career-bamdi.svg?react';
 
 export default function NavBarBackground() {
   return (
