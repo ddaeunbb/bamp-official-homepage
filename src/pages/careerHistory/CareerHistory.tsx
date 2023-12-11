@@ -1,9 +1,11 @@
+import HistoryBoy from '@/assets/career/history/history-main-img.svg?react';
+import BigSpeechBallon from '@/assets/career/history/history-speechballon-big.svg?react';
+import SmallSpeechBallon from '@/assets/career/history/history-speechballon-small.svg?react';
 import Horizon from '@/components/horizon/Horizon.tsx';
 import Navbar from '@/components/navbar/Navbar';
-import HistoryBamdi from '@/pages/careerHistory/HistoryBamdi.tsx';
-import HistoryBirth from '@/pages/careerHistory/HistoryBirth.tsx';
-import HistoryDownload from '@/pages/careerHistory/HistoryDownload.tsx';
-import HistorySymbol from '@/pages/careerHistory/HistorySymbol.tsx';
+import HistoryBamdi from '@/pages/careerHistory/section/HistoryBamdi';
+import HistoryBirth from '@/pages/careerHistory/section/HistoryBirth';
+import HistorySymbol from '@/pages/careerHistory/section/HistorySymbol';
 import { PATH, PATH_NAME } from '@/routers/path';
 
 export function Component() {
@@ -13,18 +15,23 @@ export function Component() {
         urlArr={[PATH.careerHistory, PATH.careerAward]}
         tabNameArr={[PATH_NAME.history, PATH_NAME.award]}
       />
-      <div className="pt-8 w-screen flex justify-center">
-        <div className="relative">
-          <img className="w-52" src="/src/assets/history/careerHistory2.svg" />
+      <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
+        <div className="hidden relative max-sm:block mx-auto">
+          <SmallSpeechBallon className="w-52" />
         </div>
-        <img className="w-60" src="/src/assets/history/careerHistory1.svg" />
+        <div className="relative">
+          <BigSpeechBallon className="w-52 max-sm:hidden" />
+        </div>
+        <HistoryBoy className="w-60 max-sm:mx-auto max-sm:w-56" />
       </div>
+
       <Horizon />
-      <HistoryBirth />
-      <HistorySymbol />
-      <HistoryDownload />
-      <HistoryBamdi />
-      <HistoryDownload />
+
+      <section className="mt-14 max-w-[50rem] max-md:w-11/12 mx-auto flex flex-col gap-y-20">
+        <HistoryBirth />
+        <HistorySymbol />
+        <HistoryBamdi />
+      </section>
     </div>
   );
 }
