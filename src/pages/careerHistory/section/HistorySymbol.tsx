@@ -34,7 +34,7 @@ export default function HistorySymbol() {
 
       <div className="mt-10 flex justify-center gap-x-14 max-sm:gap-x-3 max-sm:flex-col max-sm:items-center max-sm:gap-y-5">
         <DownloadBtn
-          filePath="/src/download/logo/logo-ai(2018).zip"
+          filePath="/download/logo/logo-ai(2018).zip"
           fileType={'ai'}
         />
         <DownloadBtn
