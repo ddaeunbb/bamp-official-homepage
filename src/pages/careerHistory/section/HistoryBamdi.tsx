@@ -46,11 +46,11 @@ export default function HistoryBamdi() {
 
       <div className="mt-10 flex justify-center gap-x-14 max-sm:gap-x-3 max-sm:flex-col max-sm:items-center max-sm:gap-y-5">
         <DownloadBtn
-          filePath="/src/download/bamdi/bamd-renewal(2020).ai"
+          filePath="/download/bamdi/bamd-renewal(2020).ai"
           fileType={'ai'}
         />
         <DownloadBtn
-          filePath={'/src/download/bamdi/bamdi-png.zip'}
+          filePath={'/download/bamdi/bamdi-png.zip'}
           fileType={'img'}
         />
       </div>

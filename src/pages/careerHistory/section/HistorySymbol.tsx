@@ -38,7 +38,7 @@ export default function HistorySymbol() {
           fileType={'ai'}
         />
         <DownloadBtn
-          filePath="/src/download/logo/logo-png(2018).zip"
+          filePath="/download/logo/logo-png(2018).zip"
           fileType={'img'}
         />
       </div>
