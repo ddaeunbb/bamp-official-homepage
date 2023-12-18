@@ -1,3 +1,4 @@
+import LogoHistoryMobile from '@/assets/career/history/history-logo-history-mobile.svg?react';
 import LogoHistory from '@/assets/career/history/history-logo-history.svg?react';
 import AIBtn from '@/components/button/AIBtn';
 import ImgDownloadBtn from '@/components/button/ImgDownloadBtn';
@@ -28,10 +29,11 @@ export default function HistorySymbol() {
       </div>
 
       <div className="mt-7 border-black border-[3px] rounded-[5px] flex justify-center items-center py-7">
-        <LogoHistory className="w-11/12" />
+        <LogoHistory className="w-11/12 max-sm:hidden" />
+        <LogoHistoryMobile className="hidden max-sm:block w-10/12 py-5" />
       </div>
 
-      <div className="mt-10 flex justify-center gap-x-14 max-sm:gap-x-3">
+      <div className="mt-10 flex justify-center gap-x-14 max-sm:gap-x-3 max-sm:flex-col max-sm:items-center max-sm:gap-y-5">
         <AIBtn />
         <ImgDownloadBtn />
       </div>

@@ -1,3 +1,4 @@
+import LogoHistoryMobile from '@/assets/career/history/history-logo-mobile.svg?react';
 import LogoHistory from '@/assets/career/history/history-logo.svg?react';
 
 export default function HistoryBirth() {
@@ -17,7 +18,8 @@ export default function HistoryBirth() {
         </div>
 
         <div className="mt-7 border-black border-[3px] flex justify-center items-center py-8 rounded-[5px]">
-          <LogoHistory className="max-w-md max-sm:max-w-xs" />
+          <LogoHistory className="max-w-md max-sm:max-w-xs max-sm:hidden" />
+          <LogoHistoryMobile className="hidden max-sm:block" />
         </div>
       </div>
     </article>

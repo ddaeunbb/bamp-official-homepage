@@ -1,6 +1,6 @@
-import BamdiColor from '@/assets/career/history/history-bamdi-color.svg?react';
-import BamdiExpressions from '@/assets/career/history/history-bamdi-expressions.svg?react';
-import BamdiTurn from '@/assets/career/history/history-bamdi-turn.svg?react';
+import BamdiDetailMobile from '@/assets/career/history/history-bamdi-detail-mobile.svg?react';
+import BamdiDetail from '@/assets/career/history/history-bamdi-detail.svg?react';
+import BamdiMobile from '@/assets/career/history/history-bamdi-mobile.svg?react';
 import Bamdi from '@/assets/career/history/history-bamdi.svg?react';
 import AIBtn from '@/components/button/AIBtn';
 import ImgDownloadBtn from '@/components/button/ImgDownloadBtn';
@@ -34,18 +34,18 @@ export default function HistoryBamdi() {
         </div>
       </div>
 
-      <div className="mt-7 border-[3px] border-black rounded-[5px] flex items-center justify-around p-10 max-sm:flex-col max-sm:gap-y-4">
-        <div>
-          <Bamdi className="w-28 max-sm:w-20" />
+      <div className="mt-7 border-[3px] border-black rounded-[5px] p-10 max-md:py-4 max-md:px-0">
+        <div className="flex gap-x-10 max-md:hidden">
+          <Bamdi />
+          <BamdiDetail />
         </div>
-        <div className="flex flex-col">
-          <BamdiColor className="w-[500px] max-md:w-96" />
-          <BamdiExpressions className="w-[500px] max-md:w-96" />
-          <BamdiTurn className="w-[500px] max-md:w-96" />
+        <div className="max-md:flex flex-col items-center hidden py-5 gap-y-7">
+          <BamdiMobile className="w-80" />
+          <BamdiDetailMobile className="w-80" />
         </div>
       </div>
 
-      <div className="mt-10 flex justify-center gap-x-14 max-sm:gap-x-3">
+      <div className="mt-10 flex justify-center gap-x-14 max-sm:gap-x-3 max-sm:flex-col max-sm:items-center max-sm:gap-y-5">
         <AIBtn />
         <ImgDownloadBtn />
       </div>
