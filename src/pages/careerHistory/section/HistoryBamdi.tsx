@@ -2,8 +2,7 @@ import BamdiDetailMobile from '@/assets/career/history/history-bamdi-detail-mobi
 import BamdiDetail from '@/assets/career/history/history-bamdi-detail.svg?react';
 import BamdiMobile from '@/assets/career/history/history-bamdi-mobile.svg?react';
 import Bamdi from '@/assets/career/history/history-bamdi.svg?react';
-import AIBtn from '@/components/button/AIBtn';
-import ImgDownloadBtn from '@/components/button/ImgDownloadBtn';
+import DownloadBtn from '@/utils/DownloadBtn';
 
 export default function HistoryBamdi() {
   return (
@@ -46,8 +45,14 @@ export default function HistoryBamdi() {
       </div>
 
       <div className="mt-10 flex justify-center gap-x-14 max-sm:gap-x-3 max-sm:flex-col max-sm:items-center max-sm:gap-y-5">
-        <AIBtn />
-        <ImgDownloadBtn />
+        <DownloadBtn
+          filePath="/src/download/bamdi/bamd-renewal(2020).ai"
+          fileType={'ai'}
+        />
+        <DownloadBtn
+          filePath={'/src/download/bamdi/bamdi-png.zip'}
+          fileType={'img'}
+        />
       </div>
     </article>
   );
