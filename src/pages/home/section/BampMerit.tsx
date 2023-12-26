@@ -51,9 +51,9 @@ export default function BampMerit() {
                 />
               </picture>
               <span className="text-lg font-bold">오늘까지 이어진 이야기</span>
-              <button className="mt-2 block relative">
+              <Link to={PATH.careerHistory} className="mt-2">
                 <MoreBtn />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
