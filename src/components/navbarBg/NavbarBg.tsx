@@ -5,7 +5,7 @@ interface NavbarBackgroundProps {
   url: string;
 }
 
-export default function NavbarBackground({ url }: NavbarBackgroundProps) {
+export default function NavbarBg({ url }: NavbarBackgroundProps) {
   return (
     <div className="overflow-hidden mb-12 relative w-screen h-[360px] bg-defaultYellow bg-[url('/navbar/navbar-bg.svg')] flex justify-center items-end">
       {url.includes('/career') && <CareerBamdi className="w-[360px]" />}
