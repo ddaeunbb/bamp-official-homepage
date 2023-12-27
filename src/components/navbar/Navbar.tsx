@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import NavBtn from '@/components/navbar/NavBtn';
-import NavBarBackground from '@/components/navbarBg/NavBarBackground';
+import NavbarBackground from '@/components/navbarBg/NavbarBackground';
 
 interface NavBarProps {
   urlArr: string[];
@@ -12,7 +12,7 @@ export default function Navbar({ urlArr, tabNameArr }: NavBarProps) {
 
   return (
     <>
-      <NavBarBackground />
+      <NavbarBackground url={location.pathname} />
       <div className="relative w-screen flex justify-center">
         <div className="absolute bottom-[24px]">
           <table>

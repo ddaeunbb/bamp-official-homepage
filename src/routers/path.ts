@@ -5,6 +5,9 @@ export const PATH_NAME = {
   history: '밤프 히스토리',
   sponsor: '후원문의',
   bamsaneung: '밤사능',
+  news: '밤프 소식',
+  story: '밤프인 스토리',
+  video: '홍보영상',
 } as const;
 
 export const PATH = {
@@ -13,6 +16,8 @@ export const PATH = {
   careerHistory: '/career/history',
   creditSponsor: '/credit/sponsor',
   creditBamsaneung: '/credit/bamsaneung',
+  newsStory: '/news/story',
+  newsVideo: '/news/video',
 } as const;
 
 export const PATH_LIST = {
@@ -24,6 +29,16 @@ export const PATH_LIST = {
     {
       name: PATH_NAME.award,
       path: PATH.careerAward,
+    },
+  ],
+  news: [
+    {
+      name: PATH_NAME.story,
+      path: PATH.newsStory,
+    },
+    {
+      name: PATH_NAME.video,
+      path: PATH.newsVideo,
     },
   ],
   credit: [
