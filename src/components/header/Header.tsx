@@ -24,6 +24,7 @@ export default function Header() {
         onMouseEnter={() => setIsOpen(true)}
         onMouseLeave={() => setIsOpen(false)}>
         <Tab title={PATH_NAME.career} tabNames={PATH_LIST.career} />
+        <Tab title={PATH_NAME.news} tabNames={PATH_LIST.news} />
         <Tab title={PATH_NAME.credit} tabNames={PATH_LIST.credit} />
       </div>
     </header>
