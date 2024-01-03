@@ -16,7 +16,7 @@ export default function Navbar({ urlArr, tabNameArr }: NavBarProps) {
       <div className="relative w-screen flex justify-center">
         <div className="absolute bottom-[24px]">
           <table>
-            <tr className="flex justify-center border-2 border-black rounded-[5px] overflow-hidden max-sm:w-screen">
+            <tr className="flex justify-center border-[2.5px] border-black rounded-[5px] overflow-hidden max-sm:w-screen">
               {urlArr.map((url, idx) => (
                 <th
                   key={url}
