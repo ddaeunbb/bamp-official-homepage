@@ -1,0 +1,20 @@
+.scroll {
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.storyBtnUnClicked {
+  @apply border-2 border-black bg-white py-2 px-3 rounded-full text-base hover:scale-95 transition-transform;
+}
+
+.storyBtnClicked > span {
+  @apply w-max;
+}
+
+.storyBtnClicked {
+  @apply border-2 border-black bg-defaultYellow py-2 px-3 rounded-full text-base hover:scale-95 transition-transform;
+}

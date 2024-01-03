@@ -15,7 +15,7 @@ export default function Footer() {
           <img src="/home/btn-apply.svg" alt="지원하기 버튼" />
         </a>
         <span className="text-neutral-500 mt-10 text-xs max-sm:hidden">
-          @BAMP 2023 All rights reserved
+          @BAMP 2024 All rights reserved
         </span>
       </div>
       <div
@@ -57,7 +57,7 @@ export default function Footer() {
         </a>
       </div>
       <span className="hidden text-neutral-500 text-xs max-sm:block mt-12">
-        @BAMP 2023 All rights reserved
+        @BAMP 2024 All rights reserved
       </span>
     </footer>
   );

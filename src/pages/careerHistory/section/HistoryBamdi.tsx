@@ -1,6 +1,4 @@
-import BamdiDetailMobile from '@/assets/career/history/history-bamdi-detail-mobile.svg?react';
 import BamdiDetail from '@/assets/career/history/history-bamdi-detail.svg?react';
-import BamdiMobile from '@/assets/career/history/history-bamdi-mobile.svg?react';
 import Bamdi from '@/assets/career/history/history-bamdi.svg?react';
 import DownloadBtn from '@/utils/DownloadBtn';
 
@@ -39,8 +37,11 @@ export default function HistoryBamdi() {
           <BamdiDetail />
         </div>
         <div className="max-md:flex flex-col items-center hidden py-5 gap-y-7">
-          <BamdiMobile className="w-72" />
-          <BamdiDetailMobile className="w-72" />
+          <img src="/career/history/history-bamdi.png" className="w-72" />
+          <img
+            src="/career/history/history-bamdi-detail-mobile.png"
+            className="w-72"
+          />
         </div>
       </div>
 

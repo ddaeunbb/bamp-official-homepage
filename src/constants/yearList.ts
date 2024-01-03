@@ -1,5 +1,5 @@
 const NOW = new Date();
-const YEAR = NOW.getFullYear();
+const YEAR = NOW.getFullYear() - 1; // 2023년으로 계산
 const RECENT = 5;
 const LAST = 2006;
 

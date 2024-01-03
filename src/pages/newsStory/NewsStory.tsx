@@ -46,7 +46,7 @@ export function Component() {
   };
 
   return (
-    <div className="pb-24 h-max scroll-smooth">
+    <div className="pb-24 h-max">
       <Navbar
         urlArr={[PATH.newsStory, PATH.newsVideo]}
         tabNameArr={[PATH_NAME.story, PATH_NAME.video]}
@@ -66,18 +66,29 @@ export function Component() {
       <Horizon />
 
       <section className="mt-14 max-w-[50rem] max-md:w-11/12 max-sm:w-10/12 mx-auto flex flex-col gap-y-20">
-        <div className="w-full flex gap-x-5 justify-center max-sm:gap-x-2">
-          {/* // sticky top-20 */}
-          <StoryTabBtn content="열정을 넘어선 광기" handler={moveTab1Click} />
-          <StoryTabBtn
-            content="공모전 뉴비부터 고인물까지"
-            handler={moveTab2Click}
-          />
-          <StoryTabBtn
-            content="차곡차곡 쌓이는 성장일기"
-            handler={moveTab3Click}
-          />
-          <StoryTabBtn content="팀플레이의 정석" handler={moveTab4Click} />
+        <div className="w-full overflow-scroll scroll">
+          <div className="flex gap-x-5 justify-center max-md:w-max max-md:justify-start max-md:gap-x-2">
+            <StoryTabBtn
+              content="열정을 넘어선 광기"
+              handler={moveTab1Click}
+              isClicked={tab1}
+            />
+            <StoryTabBtn
+              content="공모전 뉴비부터 고인물까지"
+              handler={moveTab2Click}
+              isClicked={tab2}
+            />
+            <StoryTabBtn
+              content="차곡차곡 쌓이는 성장일기"
+              handler={moveTab3Click}
+              isClicked={tab3}
+            />
+            <StoryTabBtn
+              content="팀플레이의 정석"
+              handler={moveTab4Click}
+              isClicked={tab4}
+            />
+          </div>
         </div>
 
         {tab1 && <StoryPassion />}

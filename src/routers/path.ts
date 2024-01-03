@@ -43,12 +43,12 @@ export const PATH_LIST = {
   ],
   credit: [
     {
-      name: PATH_NAME.sponsor,
-      path: PATH.creditSponsor,
-    },
-    {
       name: PATH_NAME.bamsaneung,
       path: PATH.creditBamsaneung,
+    },
+    {
+      name: PATH_NAME.sponsor,
+      path: PATH.creditSponsor,
     },
   ],
 } as const;
