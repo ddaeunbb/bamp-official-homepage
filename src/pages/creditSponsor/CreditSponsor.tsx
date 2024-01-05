@@ -5,8 +5,8 @@ export function Component() {
   return (
     <div>
       <Navbar
-        urlArr={[PATH.creditSponsor, PATH.creditBamsaneung]}
-        tabNameArr={[PATH_NAME.sponsor, PATH_NAME.bamsaneung]}
+        urlArr={[PATH.creditBamsaneung, PATH.creditSponsor]}
+        tabNameArr={[PATH_NAME.bamsaneung, PATH_NAME.sponsor]}
       />
     </div>
   );

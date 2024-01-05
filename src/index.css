@@ -1,5 +1,7 @@
 @import url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css');
 @import './style/component/header.css';
+@import './style/component/navbar.css';
+@import './style/component/storyTab.css';
 @import './style/page/home.css';
 @tailwind base;
 @tailwind components;

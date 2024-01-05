@@ -18,6 +18,14 @@ const router = createBrowserRouter([
         lazy: () => import('@/pages/careerHistory/CareerHistory'),
       },
       {
+        path: PATH.newsStory,
+        lazy: () => import('@/pages/newsStory/NewsStory'),
+      },
+      {
+        path: PATH.newsVideo,
+        lazy: () => import('@/pages/newsVideo/NewsVideo'),
+      },
+      {
         path: PATH.creditSponsor,
         lazy: () => import('@/pages/creditSponsor/CreditSponsor'),
       },

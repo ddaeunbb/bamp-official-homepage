@@ -27,7 +27,7 @@ export function Component() {
 
       <Horizon />
 
-      <section className="mt-14 max-w-[50rem] max-md:w-11/12 mx-auto flex flex-col gap-y-20">
+      <section className="mt-14 max-w-[50rem] max-md:w-11/12 max-sm:w-10/12 mx-auto flex flex-col gap-y-20">
         <HistoryBirth />
         <HistorySymbol />
         <HistoryBamdi />

@@ -1,6 +1,4 @@
-import LogoHistory from '@/assets/career/history/history-logo-history.svg?react';
-import AIBtn from '@/components/button/AIBtn';
-import ImgDownloadBtn from '@/components/button/ImgDownloadBtn';
+import DownloadBtn from '@/utils/DownloadBtn';
 
 export default function HistorySymbol() {
   return (
@@ -28,12 +26,25 @@ export default function HistorySymbol() {
       </div>
 
       <div className="mt-7 border-black border-[3px] rounded-[5px] flex justify-center items-center py-7">
-        <LogoHistory className="w-11/12" />
+        <img
+          src="/career/history/history-logo-history.png"
+          className="w-11/12 max-sm:hidden"
+        />
+        <img
+          src="/career/history/history-logo-history-mobile.png"
+          className="hidden max-sm:block w-10/12 py-5"
+        />
       </div>
 
-      <div className="mt-10 flex justify-center gap-x-14 max-sm:gap-x-3">
-        <AIBtn />
-        <ImgDownloadBtn />
+      <div className="mt-10 flex justify-center gap-x-14 max-sm:gap-x-3 max-sm:flex-col max-sm:items-center max-sm:gap-y-5">
+        <DownloadBtn
+          filePath="/download/logo/logo-ai(2018).zip"
+          fileType={'ai'}
+        />
+        <DownloadBtn
+          filePath="/download/logo/logo-png(2018).zip"
+          fileType={'img'}
+        />
       </div>
     </article>
   );

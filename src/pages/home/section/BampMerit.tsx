@@ -13,7 +13,7 @@ export default function BampMerit() {
       />
       <img
         className="w-32 absolute top-[640px] right-10 max-lg:hidden"
-        src="/home/awardPresent.svg"
+        src="/home/awardPresent.png"
         alt="어워드상"
       />
       <div className="mx-auto text-center flex flex-col gap-y-2 max-sm:gap-y-1 mb-20 max-sm:mb-5">
@@ -46,14 +46,14 @@ export default function BampMerit() {
                 />
                 <img
                   className="w-72"
-                  src="/home/since2006.svg"
+                  src="/home/since2006.png"
                   alt="2006년 부터"
                 />
               </picture>
               <span className="text-lg font-bold">오늘까지 이어진 이야기</span>
-              <button className="mt-2 block relative">
+              <Link to={PATH.careerHistory} className="mt-2">
                 <MoreBtn />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function BampMerit() {
                   srcSet="/home/500people.webp"
                   type="image/webp"
                 />
-                <img className="w-72" src="/home/500people.svg" alt="500명" />
+                <img className="w-72" src="/home/500people.png" alt="500명" />
               </picture>
               <span className="text-lg font-bold">밤프와 함께한 사람들</span>
               <button className="mt-2 block relative">
@@ -88,7 +88,7 @@ export default function BampMerit() {
                   srcSet="/home/500people.webp"
                   type="image/webp"
                 />
-                <img className="w-72" src="/home/500people.svg" alt="500명" />
+                <img className="w-72" src="/home/500people.png" alt="500명" />
               </picture>
               <span className="text-lg font-bold">밤프와 함께한 사람들</span>
               <button className="mt-2 block relative">
@@ -108,7 +108,7 @@ export default function BampMerit() {
               alt="상을 들고 웃고있는 밤프인"
             />
             <div className="w-96 flex flex-col justify-center items-center gap-y-8 max-md:gap-y-4">
-              <img className="w-72" src="/home/200times.svg" alt="200회 이상" />
+              <img className="w-72" src="/home/200times.png" alt="200회 이상" />
               <span className="text-lg font-bold">
                 탄탄한 수상이 증명하는 실력
               </span>

@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import NavBtn from '@/components/navbar/NavBtn';
-import NavBarBackground from '@/components/navbarBg/NavBarBackground';
+import NavbarBg from '@/components/navbarBg/NavbarBg';
 
 interface NavBarProps {
   urlArr: string[];
@@ -12,21 +12,32 @@ export default function Navbar({ urlArr, tabNameArr }: NavBarProps) {
 
   return (
     <>
-      <NavBarBackground />
+      <NavbarBg url={location.pathname} />
       <div className="relative w-screen flex justify-center">
-        <nav className="absolute bottom-[24px] w-full flex justify-center">
-          {urlArr.map((url, idx) => (
-            <Link
-              to={url}
-              key={url}
-              className="transition-shadow hover:shadow-md rounded w-60 h-[52px] py-3 bg-white border-2 border-black flex justify-center max-sm:grow">
-              <NavBtn
-                tabName={tabNameArr[idx]}
-                isCurTab={location.pathname === url}
-              />
-            </Link>
-          ))}
-        </nav>
+        <div className="absolute bottom-[24px]">
+          <table>
+            <tr className="flex justify-center border-[2.5px] border-black rounded-[5px] overflow-hidden max-sm:w-screen">
+              {urlArr.map((url, idx) => (
+                <th
+                  key={url}
+                  className={
+                    location.pathname === url
+                      ? 'bg-defaultYellow navbar'
+                      : 'navbar'
+                  }>
+                  <Link
+                    to={url}
+                    className="flex w-full h-full items-center justify-center">
+                    <NavBtn
+                      tabName={tabNameArr[idx]}
+                      isCurTab={location.pathname === url}
+                    />
+                  </Link>
+                </th>
+              ))}
+            </tr>
+          </table>
+        </div>
       </div>
     </>
   );
