@@ -2,6 +2,7 @@ import Bamdi from '@/assets/history/Bamdi.svg?react';
 import BamdiColor from '@/assets/history/BamdiColor.svg?react';
 import BamdiExpressions from '@/assets/history/BamdiExpressions.svg?react';
 import BamdiTurn from '@/assets/history/BamdiTurn.svg?react';
+
 export default function HistoryBamdi() {
   return (
     <section className="pb-8">
