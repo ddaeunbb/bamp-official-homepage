@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 import AwardGirl from '@/assets/career/award/award-main-img.svg?react';
 import BigSpeechBallon from '@/assets/career/award/award-speechballon-big.svg?react';
@@ -19,35 +20,40 @@ export function Component() {
         urlArr={[PATH.careerHistory, PATH.careerAward]}
         tabNameArr={[PATH_NAME.history, PATH_NAME.award]}
       />
-      <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
-        <div className="hidden relative max-sm:block mx-auto">
-          <SmallSpeechBallon className="w-52" />
+      <motion.div
+        initial={{ opacity: 0, y: 0 }}
+        animate={{ opacity: 1, y: -5 }}
+        transition={{ duration: 0.3 }}>
+        <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
+          <div className="hidden relative max-sm:block mx-auto">
+            <SmallSpeechBallon className="w-52" />
+          </div>
+          <AwardGirl className="w-60 max-sm:mx-auto max-sm:w-56" />
+          <div className="relative">
+            <BigSpeechBallon className="w-52 max-sm:hidden" />
+          </div>
         </div>
-        <AwardGirl className="w-60 max-sm:mx-auto max-sm:w-56" />
-        <div className="relative">
-          <BigSpeechBallon className="w-52 max-sm:hidden" />
-        </div>
-      </div>
 
-      {RECENT_YEARS.map((year, idx) => (
-        <YearAwardList year={year} awardList={AWARD_SET[year]} key={idx} />
-      ))}
-
-      <div className={isOpen ? 'hidden' : ''}>
-        <Horizon />
-        <button
-          type="button"
-          className="block mx-auto mt-14"
-          onClick={() => setIsOpen(true)}>
-          <MoreBtn />
-        </button>
-      </div>
-
-      <div className={isOpen ? '' : 'hidden'}>
-        {PAST_YEARS.map((year, idx) => (
+        {RECENT_YEARS.map((year, idx) => (
           <YearAwardList year={year} awardList={AWARD_SET[year]} key={idx} />
         ))}
-      </div>
+
+        <div className={isOpen ? 'hidden' : ''}>
+          <Horizon />
+          <button
+            type="button"
+            className="block mx-auto mt-14"
+            onClick={() => setIsOpen(true)}>
+            <MoreBtn />
+          </button>
+        </div>
+
+        <div className={isOpen ? '' : 'hidden'}>
+          {PAST_YEARS.map((year, idx) => (
+            <YearAwardList year={year} awardList={AWARD_SET[year]} key={idx} />
+          ))}
+        </div>
+      </motion.div>
     </div>
   );
 }

@@ -2,6 +2,7 @@
 @import './style/component/header.css';
 @import './style/component/navbar.css';
 @import './style/component/storyTab.css';
+@import './style/component/videoThumbnail.css';
 @import './style/page/home.css';
 @tailwind base;
 @tailwind components;

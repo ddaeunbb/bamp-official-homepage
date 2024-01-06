@@ -1,0 +1,11 @@
+.video {
+  transition: 0.25s ease-out;
+}
+
+.video:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  @apply w-screen h-5/6 bg-white rounded-t-[50px] flex justify-center overflow-scroll;
+}

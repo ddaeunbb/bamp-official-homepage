@@ -1,6 +1,12 @@
+import { motion } from 'framer-motion';
+
 export default function StoryNewbieToOB() {
   return (
-    <div className="flex flex-col gap-y-10">
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: -5 }}
+      transition={{ duration: 0.3 }}
+      className="flex flex-col gap-y-10">
       <div>
         <h2 className="font-semibold text-3xl mb-2 max-sm:text-2xl">
           #2 공모전 뉴비부터 고인물까지
@@ -42,6 +48,6 @@ export default function StoryNewbieToOB() {
           뉴비에서 광고인물까지, 모든 순간 밤프와 함께했다
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 }

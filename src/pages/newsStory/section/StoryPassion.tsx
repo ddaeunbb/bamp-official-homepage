@@ -1,6 +1,12 @@
+import { motion } from 'framer-motion';
+
 export default function StoryPassion() {
   return (
-    <div className="flex flex-col gap-y-10">
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: -5 }}
+      transition={{ duration: 0.3 }}
+      className="flex flex-col gap-y-10">
       <div>
         <h2 className="font-semibold text-3xl mb-2 max-sm:text-2xl">
           #1 열정을 넘어선 광기
@@ -39,6 +45,6 @@ export default function StoryPassion() {
           맑.눈.광은 지락실에만 있는 게 아니랍니다. 윤진님의 카톡중
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 }

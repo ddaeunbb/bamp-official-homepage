@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 import BamsaneungBoy from '@/assets/credit/bamsaneung/bamsaneung-boy.svg?react';
 import BigSpeechBalloon from '@/assets/credit/bamsaneung/bamsaneung-speechballoon-big.svg?react';
@@ -51,51 +52,56 @@ export function Component() {
         urlArr={[PATH.newsStory, PATH.newsVideo]}
         tabNameArr={[PATH_NAME.story, PATH_NAME.video]}
       />
-      <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
-        <BamsaneungBoy className="w-44 max-sm:hidden" />
-        <div className="hidden relative max-sm:block mx-auto">
-          <SmallSpeechBalloon className="w-52" />
-        </div>
-
-        <div className="relative">
-          <BigSpeechBalloon className="w-52 max-sm:hidden" />
-        </div>
-        <BamsaneungBoy className="hidden w-44 max-sm:block max-sm:mx-auto max-sm:mt-5" />
-      </div>
-
-      <Horizon />
-
-      <section className="mt-14 max-w-[50rem] max-md:w-11/12 max-sm:w-10/12 mx-auto flex flex-col gap-y-20">
-        <div className="w-full overflow-scroll scroll">
-          <div className="flex gap-x-5 justify-center max-md:w-max max-md:justify-start max-md:gap-x-2">
-            <StoryTabBtn
-              content="열정을 넘어선 광기"
-              handler={moveTab1Click}
-              isClicked={tab1}
-            />
-            <StoryTabBtn
-              content="공모전 뉴비부터 고인물까지"
-              handler={moveTab2Click}
-              isClicked={tab2}
-            />
-            <StoryTabBtn
-              content="차곡차곡 쌓이는 성장일기"
-              handler={moveTab3Click}
-              isClicked={tab3}
-            />
-            <StoryTabBtn
-              content="팀플레이의 정석"
-              handler={moveTab4Click}
-              isClicked={tab4}
-            />
+      <motion.div
+        initial={{ opacity: 0, y: 0 }}
+        animate={{ opacity: 1, y: -5 }}
+        transition={{ duration: 0.3 }}>
+        <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
+          <BamsaneungBoy className="w-44 max-sm:hidden" />
+          <div className="hidden relative max-sm:block mx-auto">
+            <SmallSpeechBalloon className="w-52" />
           </div>
+
+          <div className="relative">
+            <BigSpeechBalloon className="w-52 max-sm:hidden" />
+          </div>
+          <BamsaneungBoy className="hidden w-44 max-sm:block max-sm:mx-auto max-sm:mt-5" />
         </div>
 
-        {tab1 && <StoryPassion />}
-        {tab2 && <StoryNewbieToOB />}
-        {tab3 && <StoryGrownUp />}
-        {tab4 && <StoryTeamplay />}
-      </section>
+        <Horizon />
+
+        <section className="mt-14 max-w-[50rem] max-md:w-11/12 max-sm:w-10/12 mx-auto flex flex-col gap-y-20">
+          <div className="w-full overflow-scroll scroll">
+            <div className="flex gap-x-5 justify-center max-md:w-max max-md:justify-start max-md:gap-x-2">
+              <StoryTabBtn
+                content="열정을 넘어선 광기"
+                handler={moveTab1Click}
+                isClicked={tab1}
+              />
+              <StoryTabBtn
+                content="공모전 뉴비부터 고인물까지"
+                handler={moveTab2Click}
+                isClicked={tab2}
+              />
+              <StoryTabBtn
+                content="차곡차곡 쌓이는 성장일기"
+                handler={moveTab3Click}
+                isClicked={tab3}
+              />
+              <StoryTabBtn
+                content="팀플레이의 정석"
+                handler={moveTab4Click}
+                isClicked={tab4}
+              />
+            </div>
+          </div>
+
+          {tab1 && <StoryPassion />}
+          {tab2 && <StoryNewbieToOB />}
+          {tab3 && <StoryGrownUp />}
+          {tab4 && <StoryTeamplay />}
+        </section>
+      </motion.div>
     </div>
   );
 }
