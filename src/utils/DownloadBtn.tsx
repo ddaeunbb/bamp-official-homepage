@@ -28,7 +28,7 @@ const DownloadBtn = ({ filePath, fileType }: DownloadBtnProps) => {
   };
 
   return (
-    <button onClick={downloadFile}>
+    <button onClick={downloadFile} className="">
       {fileType === 'ai' ? <AIBtn /> : <ImgDownloadBtn />}
     </button>
   );

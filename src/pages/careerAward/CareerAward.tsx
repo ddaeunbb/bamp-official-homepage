@@ -1,8 +1,5 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import AwardGirl from '@/assets/career/award/award-main-img.svg?react';
-import BigSpeechBallon from '@/assets/career/award/award-speechballon-big.svg?react';
-import SmallSpeechBallon from '@/assets/career/award/award-speechballon-small.svg?react';
 import MoreBtn from '@/components/button/MoreBtn';
 import Horizon from '@/components/horizon/Horizon';
 import Navbar from '@/components/navbar/Navbar';
@@ -26,11 +23,20 @@ export function Component() {
         transition={{ duration: 0.3 }}>
         <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
           <div className="hidden relative max-sm:block mx-auto">
-            <SmallSpeechBallon className="w-52" />
+            <img
+              className="w-52"
+              src="/career/award/award-speechballon-small.png"
+            />
           </div>
-          <AwardGirl className="w-60 max-sm:mx-auto max-sm:w-56" />
+          <img
+            className="w-60 max-sm:mx-auto max-sm:w-56"
+            src="/career/award/career-girl.png"
+          />
           <div className="relative">
-            <BigSpeechBallon className="w-52 max-sm:hidden" />
+            <img
+              className="w-52 max-sm:hidden"
+              src="/career/award/award-speechballon-big.png"
+            />
           </div>
         </div>
 
