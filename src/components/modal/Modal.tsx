@@ -26,15 +26,11 @@ export default function Modal({
   const divRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    document.body.style.cssText = `
-        position: fixed; 
-        top: -${window.scrollY}px;
-        overflow-y: scroll;
-        width: 100%;`;
+    const body = document.body;
+    body.classList.add('no-scroll');
+
     return () => {
-      const scrollY = document.body.style.top;
-      document.body.style.cssText = '';
-      window.scrollTo(0, parseInt(scrollY || '0', 10) * -1);
+      body.classList.remove('no-scroll');
     };
   }, []);
 
