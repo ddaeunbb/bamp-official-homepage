@@ -14,7 +14,7 @@ export default function Footer() {
           role="밤프에 지원하는 버튼">
           <img
             className="w-32"
-            src="/footer/btn-apply.png"
+            src="/footer/btn-apply.webp"
             alt="지원하기 버튼"
           />
         </a>
@@ -29,35 +29,47 @@ export default function Footer() {
           href={`mailto:${BAMP_LINK.mail}`}
           role="밤프에 메일을 보내는 버튼"
           rel="external">
-          <img src="/footer/mail.svg" alt="메일 아이콘" />
+          <img className="w-8" src="/footer/mail.webp" alt="메일 아이콘" />
         </a>
         <a
           target="_blank"
           href={BAMP_LINK.instagram}
           role="밤프인스타로 연결된 버튼"
           rel="external">
-          <img src="/footer/insta.svg" alt="인스타그램 아이콘" />
+          <img
+            className="w-8"
+            src="/footer/insta.webp"
+            alt="인스타그램 아이콘"
+          />
         </a>
         <a
           target="_blankt"
           href={BAMP_LINK.youtube}
           role="밤프유튜브로 연결된 버튼"
           rel="external">
-          <img src="/footer/youtube.svg" alt="유튜브 아이콘" />
+          <img className="w-8" src="/footer/youtube.webp" alt="유튜브 아이콘" />
         </a>
         <a
           target="_blank"
           href={BAMP_LINK.cafe}
           role="밤프카페로 연결된 버튼"
           rel="external">
-          <img src="/footer/cafe.svg" alt="네이버카페 아이콘" />
+          <img
+            className="w-8"
+            src="/footer/cafe.webp"
+            alt="네이버카페 아이콘"
+          />
         </a>
         <a
           target="_blank"
           href={BAMP_LINK.blog}
           role="밤프블로그로 연결된 버튼"
           rel="external">
-          <img src="/footer/blog.svg" alt="네이버블로그 아이콘" />
+          <img
+            className="w-8"
+            src="/footer/blog.webp"
+            alt="네이버블로그 아이콘"
+          />
         </a>
       </div>
       <span className="hidden text-neutral-500 text-xs max-sm:block mt-12">

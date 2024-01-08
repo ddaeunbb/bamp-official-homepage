@@ -14,7 +14,7 @@ export default function LinkToBamsaneung() {
       </div>
       <div className="flex h-full items-end">
         <img
-          src="/home/home-main-bamdi.png"
+          src="/home/home-main-bamdi.webp"
           className="w-96 max-sm:w-80 max-sm:pt-8"
         />
       </div>

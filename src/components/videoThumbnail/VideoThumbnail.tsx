@@ -23,7 +23,10 @@ export default function VideoThumbnail({
       className="cursor-pointer col-span-1 rounded-2xl overflow-hidden video"
       onClick={onClickHandler}>
       <div className="w-full bg-[#D9D9D9] object-fill">
-        <img className="w-full" src={`/news/video/thumbnail-${cardinal}.jpg`} />
+        <img
+          className="w-full"
+          src={`/news/video/thumbnail-${cardinal}.webp`}
+        />
       </div>
       <div className="w-full h-12 flex items-center pl-5 ">
         <span className="text-sm font-semibold">

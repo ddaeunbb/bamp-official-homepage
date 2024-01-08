@@ -27,11 +27,11 @@ export default function HistorySymbol() {
 
       <div className="mt-7 border-black border-[3px] rounded-[5px] flex justify-center items-center py-7">
         <img
-          src="/career/history/history-logo-history.png"
+          src="/career/history/history-logo-history.webp"
           className="w-11/12 max-sm:hidden"
         />
         <img
-          src="/career/history/history-logo-history-mobile.png"
+          src="/career/history/history-logo-history-mobile.webp"
           className="hidden max-sm:block w-10/12 py-5"
         />
       </div>

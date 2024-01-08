@@ -43,7 +43,7 @@ export default function StoryNewbieToOB() {
       </div>
 
       <div>
-        <img className="rounded-lg" src="/news/story/story-newbie.png" />
+        <img className="rounded-lg" src="/news/story/story-newbie.webp" />
         <span className="font-normal text-sm text-center block mt-3 text-[#999999]">
           뉴비에서 광고인물까지, 모든 순간 밤프와 함께했다
         </span>

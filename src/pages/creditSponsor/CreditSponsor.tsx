@@ -50,22 +50,13 @@ export function Component() {
         animate={{ opacity: 1, y: -5 }}
         transition={{ duration: 0.3 }}>
         <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
-          <img className="w-52 max-sm:hidden" src="/credit/credit-boy.png" />
-
-          <div className="hidden relative max-sm:block mx-auto">
-            <img className="w-52" src="/credit/credit-speechballon-small.png" />
-          </div>
-
-          <div className="relative">
-            <img
-              className="w-52 max-sm:hidden"
-              src="/credit/credit-speechballon-big.png"
-            />
-          </div>
-
           <img
-            className="hidden w-52 max-sm:block max-sm:mx-auto max-sm:mt-5"
-            src="/credit/credit-boy.png"
+            className="w-[480px] max-sm:hidden"
+            src="/credit/credit-boy.webp"
+          />
+          <img
+            className="w-[300px] hidden max-sm:block mx-auto"
+            src="/credit/credit-boy-mobile.webp"
           />
         </div>
 
@@ -84,7 +75,7 @@ export function Component() {
           <div className="flex justify-center gap-x-10">
             <img
               className="h-64 self-center max-sm:h-28"
-              src="/credit/sponsor/sponser-greet-bamdi.png"
+              src="/credit/sponsor/sponser-greet-bamdi.webp"
             />
             <div className="flex gap-x-10 max-sm:text-sm max-sm:gap-x-3">
               <div className="font-semibold flex flex-col justify-center gap-y-3">
@@ -123,7 +114,7 @@ export function Component() {
             </span>
             <img
               className="mt-8 w-8/12 max-sm:w-10/12 mx-auto"
-              src="/credit/sponsor/sponser-pig.png"
+              src="/credit/sponsor/sponser-pig.webp"
             />
             <button
               onClick={() => handleCopyClipBoard('7979-59-34529')}
@@ -131,7 +122,7 @@ export function Component() {
               <span className="font-semibold text-sm">계좌 복사하기</span>
               <img
                 className="w-4"
-                src="/credit/sponsor/sponsor-clipboard.png"
+                src="/credit/sponsor/sponsor-clipboard.webp"
               />
             </button>
           </div>

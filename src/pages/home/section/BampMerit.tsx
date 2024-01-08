@@ -13,7 +13,7 @@ export default function BampMerit() {
       />
       <img
         className="w-32 absolute top-[640px] right-10 max-lg:hidden"
-        src="/home/awardPresent.png"
+        src="/home/awardPresent.webp"
         alt="어워드상"
       />
       <div className="mx-auto text-center flex flex-col gap-y-2 max-sm:gap-y-1 mb-20 max-sm:mb-5">
@@ -38,18 +38,11 @@ export default function BampMerit() {
               alt="상을 들고 웃고있는 밤프인"
             />
             <div className="w-96 flex flex-col justify-center items-center gap-y-8 max-md:gap-y-4">
-              <picture>
-                <source
-                  className="w-72"
-                  srcSet="/home/since2006.webp"
-                  type="image/webp"
-                />
-                <img
-                  className="w-72"
-                  src="/home/since2006.png"
-                  alt="2006년 부터"
-                />
-              </picture>
+              <img
+                className="w-72"
+                srcSet="/home/since2006.webp"
+                alt="2006년부터"
+              />
               <span className="text-lg font-bold">오늘까지 이어진 이야기</span>
               <Link to={PATH.careerHistory} className="mt-2">
                 <MoreBtn />
@@ -63,14 +56,8 @@ export default function BampMerit() {
             className="flex justify-between max-md:flex-col gap-x-16 max-lg:gap-x-10"
             role="두번째 강점">
             <div className="w-96 flex flex-col justify-center items-center gap-y-8 max-md:hidden">
-              <picture>
-                <source
-                  className="w-72"
-                  srcSet="/home/500people.webp"
-                  type="image/webp"
-                />
-                <img className="w-72" src="/home/500people.png" alt="500명" />
-              </picture>
+              <img className="w-72" srcSet="/home/500people.webp" alt="500명" />
+
               <span className="text-lg font-bold">밤프와 함께한 사람들</span>
               <button className="mt-2 block relative">
                 <MoreBtn />
@@ -82,14 +69,7 @@ export default function BampMerit() {
               alt="웃고 서있는 두 명의 밤프인"
             />
             <div className="w-96 hidden flex-col justify-center items-center max-md:flex max-md:gap-y-4">
-              <picture>
-                <source
-                  className="w-72"
-                  srcSet="/home/500people.webp"
-                  type="image/webp"
-                />
-                <img className="w-72" src="/home/500people.png" alt="500명" />
-              </picture>
+              <img className="w-72" srcSet="/home/500people.webp" alt="500명" />
               <span className="text-lg font-bold">밤프와 함께한 사람들</span>
               <button className="mt-2 block relative">
                 <MoreBtn />
@@ -108,7 +88,11 @@ export default function BampMerit() {
               alt="상을 들고 웃고있는 밤프인"
             />
             <div className="w-96 flex flex-col justify-center items-center gap-y-8 max-md:gap-y-4">
-              <img className="w-72" src="/home/200times.png" alt="200회 이상" />
+              <img
+                className="w-72"
+                src="/home/200times.webp"
+                alt="200회 이상"
+              />
               <span className="text-lg font-bold">
                 탄탄한 수상이 증명하는 실력
               </span>

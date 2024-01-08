@@ -40,7 +40,7 @@ export default function StoryPassion() {
       </div>
 
       <div>
-        <img src="/news/story/story-passion.png" />
+        <img src="/news/story/story-passion.webp" />
         <span className="font-normal text-sm text-center block mt-3 text-[#999999]">
           맑.눈.광은 지락실에만 있는 게 아니랍니다. 윤진님의 카톡중
         </span>

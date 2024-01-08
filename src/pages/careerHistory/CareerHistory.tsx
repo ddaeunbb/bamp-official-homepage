@@ -17,22 +17,14 @@ export function Component() {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: -5 }}
         transition={{ duration: 0.3 }}>
-        <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
-          <div className="hidden relative max-sm:block mx-auto">
-            <img
-              className="w-52"
-              src="/career/history/history-speechballon-small.png"
-            />
-          </div>
-          <div className="relative">
-            <img
-              className="w-52 max-sm:hidden"
-              src="/career/history/history-speechballon-big.png"
-            />
-          </div>
+        <div className="pt-4 w-screen flex justify-center max-sm:flex-col">
           <img
-            className="w-60 max-sm:mx-auto max-sm:w-56"
-            src="/career/history/history-boy.png"
+            className="w-[480px] max-sm:hidden"
+            src="/career/history/history-boy.webp"
+          />
+          <img
+            className="w-[300px] hidden max-sm:block mx-auto"
+            src="/career/history/history-boy-mobile.webp"
           />
         </div>
 
@@ -43,7 +35,7 @@ export function Component() {
           <HistorySymbol />
           <HistoryBamdi />
           <div className="mx-auto text-sm bg-[#F4F4F4] px-5 py-2 rounded-lg text-[#707070] font-normal flex gap-x-2 items-center justify-center">
-            <img src="/career/history/history-warning.png" className="w-5" />
+            <img src="/career/history/history-warning.webp" className="w-5" />
             <div className="max-md:flex max-md:flex-col max-md:pl-2">
               <span>*본 페이지 내의 모든 디자인 권리는 밤프에게 있습니다.</span>
               <span>
