@@ -53,10 +53,12 @@ export function Component() {
           <img
             className="w-[480px] max-sm:hidden"
             src="/credit/credit-boy.webp"
+            alt="팔을 벌리고 있는 캐릭터"
           />
           <img
             className="w-[300px] hidden max-sm:block mx-auto"
             src="/credit/credit-boy-mobile.webp"
+            alt="팔을 벌리고 있는 캐릭터"
           />
         </div>
 
@@ -76,6 +78,7 @@ export function Component() {
             <img
               className="h-64 self-center max-sm:h-28"
               src="/credit/sponsor/sponser-greet-bamdi.webp"
+              alt="인사하는 밤디"
             />
             <div className="flex gap-x-10 max-sm:text-sm max-sm:gap-x-3">
               <div className="font-semibold flex flex-col justify-center gap-y-3">
@@ -115,6 +118,7 @@ export function Component() {
             <img
               className="mt-8 w-8/12 max-sm:w-10/12 mx-auto"
               src="/credit/sponsor/sponser-pig.webp"
+              alt="돼지 저금통"
             />
             <button
               onClick={() => handleCopyClipBoard('7979-59-34529')}
@@ -123,6 +127,7 @@ export function Component() {
               <img
                 className="w-4"
                 src="/credit/sponsor/sponsor-clipboard.webp"
+                alt="클립보드 아이콘"
               />
             </button>
           </div>

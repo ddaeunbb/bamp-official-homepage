@@ -20,10 +20,12 @@ export function Component() {
           <img
             className="w-[480px] max-sm:hidden"
             src="/credit/credit-boy.webp"
+            alt="팔을 벌리고 있는 캐릭터"
           />
           <img
             className="w-[300px] hidden max-sm:block mx-auto"
             src="/credit/credit-boy-mobile.webp"
+            alt="팔을 벌리고 있는 캐릭터"
           />
         </div>
 
@@ -34,6 +36,7 @@ export function Component() {
             <img
               src="/credit/bamsaneung/bamsaneung-heart.webp"
               className="w-96 max-sm:w-full"
+              alt="하트를 그리는 밤사능 멤버"
             />
             <div className="flex flex-col justify-center gap-y-5 max-sm:w-full max-sm:mt-8">
               <div>

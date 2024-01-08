@@ -1,23 +1,16 @@
 export default function Welcome() {
   return (
-    <section className="bg-defaultYellow" role="intro-page">
-      <div className="relative">
-        <img
-          src="/home/home-main-logo.webp"
-          className="absolute w-96 max-md:w-40 center"
-        />
-        <img
-          className="w-screen"
-          src="/home/main-vector.webp"
-          alt="둥근하얀장식"
-        />
-
-        <img
-          src="/home/main-image.webp"
-          className="absolute z-20 top-[-25px] w-screen"
-          alt="사람들을 환영하는 밤프인들"
-        />
-      </div>
+    <section className="bg-defaultYellow h-max relative" role="intro-page">
+      <img
+        className="w-screen"
+        src="/home/main-vector.webp"
+        alt="둥근하얀장식"
+      />
+      <img
+        src="/home/main-image.webp"
+        className="w-full absolute z-20 bottom-24 max-lg:bottom-14 max-md:bottom-10 max-sm:bottom-6"
+        alt="사람들을 환영하는 밤프인들"
+      />
     </section>
   );
 }

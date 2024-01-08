@@ -26,6 +26,7 @@ export default function VideoThumbnail({
         <img
           className="w-full"
           src={`/news/video/thumbnail-${cardinal}.webp`}
+          alt="유튜브썸네일"
         />
       </div>
       <div className="w-full h-12 flex items-center pl-5 ">

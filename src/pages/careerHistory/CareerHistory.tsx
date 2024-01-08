@@ -21,10 +21,12 @@ export function Component() {
           <img
             className="w-[480px] max-sm:hidden"
             src="/career/history/history-boy.webp"
+            alt="브이를 하고 있는 캐릭터"
           />
           <img
             className="w-[300px] hidden max-sm:block mx-auto"
             src="/career/history/history-boy-mobile.webp"
+            alt="브이를 하고 있는 캐릭터"
           />
         </div>
 
@@ -35,7 +37,11 @@ export function Component() {
           <HistorySymbol />
           <HistoryBamdi />
           <div className="mx-auto text-sm bg-[#F4F4F4] px-5 py-2 rounded-lg text-[#707070] font-normal flex gap-x-2 items-center justify-center">
-            <img src="/career/history/history-warning.webp" className="w-5" />
+            <img
+              src="/career/history/history-warning.webp"
+              className="w-5"
+              alt="경고 아이콘"
+            />
             <div className="max-md:flex max-md:flex-col max-md:pl-2">
               <span>*본 페이지 내의 모든 디자인 권리는 밤프에게 있습니다.</span>
               <span>

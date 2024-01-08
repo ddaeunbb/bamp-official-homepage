@@ -5,7 +5,7 @@ import { PATH } from '@/routers/path';
 export default function BampMerit() {
   // rel="tag"
   return (
-    <main className="py-32 relative" role="밤프만의 강점소개">
+    <main className="py-32 relative max-sm:py-16" role="밤프만의 강점소개">
       <img
         className="w-44 absolute top-10 left-10 max-md:left-1 max-lg:hidden"
         src="/home/bamp-box.gif"
@@ -26,7 +26,7 @@ export default function BampMerit() {
       </div>
 
       <div
-        className="flex flex-col gap-y-14 max-md:gap-y-32"
+        className="flex flex-col gap-y-14 max-md:gap-y-32 max-sm:gap-y-10"
         role="강점들 나열하는 곳">
         <div className="w-screen flex justify-center">
           <div
@@ -59,9 +59,9 @@ export default function BampMerit() {
               <img className="w-72" srcSet="/home/500people.webp" alt="500명" />
 
               <span className="text-lg font-bold">밤프와 함께한 사람들</span>
-              <button className="mt-2 block relative">
+              <Link to={PATH.newsStory} className="mt-2">
                 <MoreBtn />
-              </button>
+              </Link>
             </div>
             <img
               className="w-96"
@@ -71,9 +71,9 @@ export default function BampMerit() {
             <div className="w-96 hidden flex-col justify-center items-center max-md:flex max-md:gap-y-4">
               <img className="w-72" srcSet="/home/500people.webp" alt="500명" />
               <span className="text-lg font-bold">밤프와 함께한 사람들</span>
-              <button className="mt-2 block relative">
+              <Link to={PATH.newsStory} className="mt-2">
                 <MoreBtn />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
