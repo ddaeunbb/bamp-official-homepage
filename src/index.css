@@ -1,4 +1,3 @@
-@import url('https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css');
 @import './style/component/header.css';
 @import './style/component/navbar.css';
 @import './style/component/storyTab.css';
@@ -10,8 +9,7 @@
 
 @layer base {
   html {
-    font-family: 'Spoqa Han Sans Neo', 'AppleSDGothicNeo', 'Noto Sans KR',
-      'sans-serif';
+    font-family: 'Spoqa Han Sans Neo', 'Noto Sans KR', 'sans-serif';
     font-size: 16px;
     font-weight: 500;
     color: #262626;

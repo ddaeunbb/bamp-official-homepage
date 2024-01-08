@@ -42,6 +42,15 @@ export function Component() {
           <HistoryBirth />
           <HistorySymbol />
           <HistoryBamdi />
+          <div className="mx-auto text-sm bg-[#F4F4F4] px-5 py-2 rounded-lg text-[#707070] font-normal flex gap-x-2 items-center justify-center">
+            <img src="/career/history/history-warning.png" className="w-5" />
+            <div className="max-md:flex max-md:flex-col max-md:pl-2">
+              <span>*본 페이지 내의 모든 디자인 권리는 밤프에게 있습니다.</span>
+              <span>
+                밤프의 허락 없이 무단 수정 및 상업적 이용이 금지됩니다.
+              </span>
+            </div>
+          </div>
         </section>
       </motion.div>
     </div>

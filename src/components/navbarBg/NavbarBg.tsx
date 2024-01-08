@@ -4,7 +4,7 @@ interface NavbarBackgroundProps {
 
 export default function NavbarBg({ url }: NavbarBackgroundProps) {
   return (
-    <div className="overflow-hidden mb-12 relative w-screen h-[360px] bg-defaultYellow bg-[url('/navbar/navbar-bg.svg')] flex justify-center items-end">
+    <div className="overflow-hidden mb-12 relative w-screen h-[360px] bg-defaultYellow bg-[url('/navbar/navbar-bg.png')] flex justify-center items-end bg-contain">
       {url.includes('/career') && (
         <img src="/career/career-bamdi.png" className="w-80" />
       )}

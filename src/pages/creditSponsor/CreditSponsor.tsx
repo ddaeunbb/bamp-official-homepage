@@ -39,8 +39,8 @@ export function Component() {
             animate={{ opacity: 1, y: -5 }}
             transition={{ duration: 0.3 }}
             exit={{ opacity: 0, y: 0 }}
-            className="w-44 flex justify-center fixed right-4 top-20 bg-defaultYellow py-2 rounded-xl">
-            <span>🔴 복사완료! 🔴</span>
+            className="w-36 flex justify-center fixed z-50 right-4 top-20 bg-defaultYellow py-2 rounded-xl border-2 border-black">
+            <span className="font-semibold">💛 복사완료 💛</span>
           </motion.div>
         )}
       </AnimatePresence>
@@ -127,7 +127,7 @@ export function Component() {
             />
             <button
               onClick={() => handleCopyClipBoard('7979-59-34529')}
-              className="animate-bounce flex items-center justify-center gap-x-1 px-3 py-2 bg-defaultYellow mx-auto rounded-xl mt-4">
+              className="animate-bounce flex items-center justify-center gap-x-1 px-3 py-2 bg-defaultYellow mx-auto rounded-xl mt-8">
               <span className="font-semibold text-sm">계좌 복사하기</span>
               <img
                 className="w-4"

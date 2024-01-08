@@ -12,7 +12,11 @@ export default function Footer() {
           href={BAMP_LINK.apply}
           rel="external"
           role="밤프에 지원하는 버튼">
-          <img src="/home/btn-apply.svg" alt="지원하기 버튼" />
+          <img
+            className="w-32"
+            src="/footer/btn-apply.png"
+            alt="지원하기 버튼"
+          />
         </a>
         <span className="text-neutral-500 mt-10 text-xs max-sm:hidden">
           @BAMP 2024 All rights reserved

@@ -65,7 +65,7 @@ export default function Modal({
         transition={{ type: 'tween', duration: 0.3, ease: 'easeInOut' }}
         onClick={(e) => onClickHandler(e)}
         ref={divRef}>
-        <div className="w-[900px] max-lg:w-[660px] max-md:w-[500px] max-sm:w-[426px] h-max py-14 flex flex-col gap-y-5">
+        <div className="w-[900px] max-lg:w-[660px] max-md:w-[500px] max-sm:w-[426px] h-max py-14 flex flex-col gap-y-5 max-sm:px-8">
           <div className="flex justify-between">
             <div>
               <h2 className="font-bold text-2xl">{`[BAMP ${cardinal}기 홍보영상]`}</h2>
