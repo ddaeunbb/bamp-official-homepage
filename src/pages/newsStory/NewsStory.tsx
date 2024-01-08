@@ -57,10 +57,12 @@ export function Component() {
           <img
             className="w-[480px] max-sm:hidden"
             src="/news/story/story-boy.webp"
+            alt="궁금해 하는 캐릭터"
           />
           <img
             className="w-[300px] hidden max-sm:block mx-auto"
             src="/news/story/story-boy-mobile.webp"
+            alt="궁금해 하는 캐릭터"
           />
         </div>
 

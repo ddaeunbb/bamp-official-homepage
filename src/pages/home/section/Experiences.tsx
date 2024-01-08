@@ -14,6 +14,7 @@ export default function FourthSection() {
           <img
             src="/home/home-experience.webp"
             alt="다양한 공모전을 하는 밤프인의 모습"
+            loading="lazy"
           />
           <h2 className="text-xl font-bold">다양한 공모전 경험</h2>
           <span className="text-sm text-neutral-500">
@@ -24,6 +25,7 @@ export default function FourthSection() {
           <img
             src="/home/home-curri.webp"
             alt="다양한 커리큘럼에 참여하는 밤프인의 모습"
+            loading="lazy"
           />
           <h2 className="text-xl font-bold">알찬 커리큘럼</h2>
           <span className="text-sm text-neutral-500">#OB특강 #실력향상ing</span>
@@ -32,6 +34,7 @@ export default function FourthSection() {
           <img
             src="/home/home-memory.webp"
             alt="다같이 놀고있는 밤프인의 모습"
+            loading="lazy"
           />
           <h2 className="text-xl font-bold">즐거운 추억</h2>
           <span className="text-sm text-neutral-500">

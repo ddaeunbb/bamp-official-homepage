@@ -55,13 +55,17 @@ export default function MobileHeader() {
             <button
               className="absolute right-8 top-8"
               onClick={() => setIsHamburgerOpen(false)}>
-              <img src="/header/mobile-closebtn.png" className="w-8" />
+              <img
+                src="/header/mobile-closebtn.png"
+                className="w-8"
+                alt="엑스모양아이콘"
+              />
             </button>
 
             <ul className="flex flex-col gap-y-12">
               <Link to={PATH.home} onClick={() => setIsHamburgerOpen(false)}>
                 <li>
-                  <img className="w-28" src="/header/logo.png" />
+                  <img className="w-28" src="/header/logo.png" alt="밤프로고" />
                 </li>
               </Link>
 
@@ -155,7 +159,7 @@ export default function MobileHeader() {
         </Link>
 
         <button className="w-5" onClick={() => setIsHamburgerOpen(true)}>
-          <img src="/header/mobile-header.png" />
+          <img src="/header/mobile-header.png" alt="햄버거 아이콘" />
         </button>
       </header>
     </>
