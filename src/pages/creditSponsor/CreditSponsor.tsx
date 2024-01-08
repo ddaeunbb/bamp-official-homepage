@@ -5,7 +5,8 @@ import { PATH, PATH_NAME } from '@/routers/path';
 
 export function Component() {
   const onClickHandler = () => {
-    const googleAppUrl = 'https://apps.apple.com/kr/app/id1258019595';
+    const googleAppUrl =
+      'https://apps.apple.com/kr/app/%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC/id1258016944';
 
     // Open the Google app in a new window/tab
     window.open(googleAppUrl, '_blank');
@@ -46,7 +47,7 @@ export function Component() {
 
         <section className="mt-14 max-w-[50rem] max-md:w-11/12 max-sm:w-10/12 mx-auto flex flex-col gap-y-12">
           <div className="flex flex-col justify-center text-center">
-            <h2 className="font-extrabold text-3xl max-sm:text-2xl">
+            <h2 className="font-extrabold text-3xl max-sm:text-xl">
               누구나 할 수 있기에, WHO ￦입니다.
             </h2>
             <span className="mt-4 text-sm text-gray-400">
@@ -56,10 +57,10 @@ export function Component() {
 
           <div className="flex justify-center gap-x-10">
             <img
-              className="h-64 self-center max-sm:h-56"
+              className="h-64 self-center max-sm:h-28"
               src="/credit/sponsor/sponser-greet-bamdi.png"
             />
-            <div className="flex gap-x-10 max-sm:text-sm">
+            <div className="flex gap-x-10 max-sm:text-sm max-sm:gap-x-3">
               <div className="font-semibold flex flex-col justify-center gap-y-3">
                 <h2>19기</h2>
                 <h2>20기</h2>

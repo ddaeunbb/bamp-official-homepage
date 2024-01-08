@@ -54,7 +54,7 @@ export function Component() {
                 <span>"밤프,사랑과 능력"의 줄임말로,</span>
                 <span>밤프를 사랑하는 OB가 모여 만든 그룹이에요.</span>
               </div>
-              <span>현직자 세미나, 공식 홈페이지 제작, 운영진 지원까지</span>
+              <span>현직자 세미나, 공식 홈페이지 제작, 운영지원까지</span>
               <div className="flex flex-col">
                 <span>활동기수의 성장을 위해 필요한 모든 서포트를</span>
                 <span>제공하고 있답니다.</span>
