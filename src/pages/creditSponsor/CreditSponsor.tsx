@@ -1,23 +1,49 @@
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import Horizon from '@/components/horizon/Horizon.tsx';
 import Navbar from '@/components/navbar/Navbar';
 import { PATH, PATH_NAME } from '@/routers/path';
 
 export function Component() {
-  const onClickHandler = () => {
-    const googleAppUrl =
-      'https://apps.apple.com/kr/app/%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC/id1258016944';
+  const [isCopyed, setIsCopyed] = useState<boolean>(false);
 
-    // Open the Google app in a new window/tab
-    window.open(googleAppUrl, '_blank');
+  useEffect(() => {
+    let timeoutId: number;
+    if (isCopyed) {
+      timeoutId = setTimeout(() => setIsCopyed(false), 1000);
+    }
+
+    return () => clearTimeout(timeoutId);
+  }, [isCopyed]);
+
+  const handleCopyClipBoard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setIsCopyed(true);
+    } catch (error) {
+      alert('클립보드 복사에 실패하였습니다.');
+    }
   };
 
   return (
-    <div className="pb-24 h-max">
+    <div className="pb-24 h-max relative">
       <Navbar
         urlArr={[PATH.creditBamsaneung, PATH.creditSponsor]}
         tabNameArr={[PATH_NAME.bamsaneung, PATH_NAME.sponsor]}
       />
+
+      <AnimatePresence>
+        {isCopyed && (
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1, y: -5 }}
+            transition={{ duration: 0.3 }}
+            exit={{ opacity: 0, y: 0 }}
+            className="w-44 flex justify-center fixed right-4 top-20 bg-defaultYellow py-2 rounded-xl">
+            <span>🔴 복사완료! 🔴</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <motion.div
         initial={{ opacity: 0, y: 0 }}
@@ -99,8 +125,14 @@ export function Component() {
               className="mt-8 w-8/12 max-sm:w-10/12 mx-auto"
               src="/credit/sponsor/sponser-pig.png"
             />
-            <button onClick={onClickHandler} className="bg-blue-300">
-              열리는 버튼
+            <button
+              onClick={() => handleCopyClipBoard('7979-59-34529')}
+              className="animate-bounce flex items-center justify-center gap-x-1 px-3 py-2 bg-defaultYellow mx-auto rounded-xl mt-4">
+              <span className="font-semibold text-sm">계좌 복사하기</span>
+              <img
+                className="w-4"
+                src="/credit/sponsor/sponsor-clipboard.png"
+              />
             </button>
           </div>
         </section>
