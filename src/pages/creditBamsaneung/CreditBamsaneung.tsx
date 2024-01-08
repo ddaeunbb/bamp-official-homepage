@@ -1,7 +1,4 @@
 import { motion } from 'framer-motion';
-import BamsaneungBoy from '@/assets/credit/bamsaneung/bamsaneung-boy.svg?react';
-import BigSpeechBalloon from '@/assets/credit/bamsaneung/bamsaneung-speechballoon-big.svg?react';
-import SmallSpeechBalloon from '@/assets/credit/bamsaneung/bamsaneung-speechballoon-small.svg?react';
 import Horizon from '@/components/horizon/Horizon';
 import Navbar from '@/components/navbar/Navbar';
 import ProfileImg from '@/components/profileImg/ProfileImg';
@@ -20,15 +17,23 @@ export function Component() {
         animate={{ opacity: 1, y: -5 }}
         transition={{ duration: 0.3 }}>
         <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
-          <BamsaneungBoy className="w-44 max-sm:hidden" />
+          <img className="w-52 max-sm:hidden" src="/credit/credit-boy.png" />
+
           <div className="hidden relative max-sm:block mx-auto">
-            <SmallSpeechBalloon className="w-52" />
+            <img className="w-52" src="/credit/credit-speechballon-small.png" />
           </div>
 
           <div className="relative">
-            <BigSpeechBalloon className="w-52 max-sm:hidden" />
+            <img
+              className="w-52 max-sm:hidden"
+              src="/credit/credit-speechballon-big.png"
+            />
           </div>
-          <BamsaneungBoy className="hidden w-44 max-sm:block max-sm:mx-auto max-sm:mt-5" />
+
+          <img
+            className="hidden w-52 max-sm:block max-sm:mx-auto max-sm:mt-5"
+            src="/credit/credit-boy.png"
+          />
         </div>
 
         <Horizon />

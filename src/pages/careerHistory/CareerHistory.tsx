@@ -1,7 +1,4 @@
 import { motion } from 'framer-motion';
-import HistoryBoy from '@/assets/career/history/history-main-img.svg?react';
-import BigSpeechBallon from '@/assets/career/history/history-speechballon-big.svg?react';
-import SmallSpeechBallon from '@/assets/career/history/history-speechballon-small.svg?react';
 import Horizon from '@/components/horizon/Horizon.tsx';
 import Navbar from '@/components/navbar/Navbar';
 import HistoryBamdi from '@/pages/careerHistory/section/HistoryBamdi';
@@ -22,12 +19,21 @@ export function Component() {
         transition={{ duration: 0.3 }}>
         <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
           <div className="hidden relative max-sm:block mx-auto">
-            <SmallSpeechBallon className="w-52" />
+            <img
+              className="w-52"
+              src="/career/history/history-speechballon-small.png"
+            />
           </div>
           <div className="relative">
-            <BigSpeechBallon className="w-52 max-sm:hidden" />
+            <img
+              className="w-52 max-sm:hidden"
+              src="/career/history/history-speechballon-big.png"
+            />
           </div>
-          <HistoryBoy className="w-60 max-sm:mx-auto max-sm:w-56" />
+          <img
+            className="w-60 max-sm:mx-auto max-sm:w-56"
+            src="/career/history/history-boy.png"
+          />
         </div>
 
         <Horizon />
