@@ -1,6 +1,12 @@
+import { motion } from 'framer-motion';
+
 export default function StoryTeamplay() {
   return (
-    <div className="flex flex-col gap-y-10">
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: -5 }}
+      transition={{ duration: 0.3 }}
+      className="flex flex-col gap-y-10">
       <div>
         <h2 className="font-semibold text-3xl mb-2 max-sm:text-2xl">
           #4 팀플레이의 정석
@@ -39,6 +45,6 @@ export default function StoryTeamplay() {
           소설 같은 케미, 최고의 시너지. 밤프에선 현실이 됩니다!
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 }

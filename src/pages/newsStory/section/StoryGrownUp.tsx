@@ -1,6 +1,12 @@
+import { motion } from 'framer-motion';
+
 export default function StoryGrownUp() {
   return (
-    <div className="flex flex-col gap-y-10">
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: -5 }}
+      transition={{ duration: 0.3 }}
+      className="flex flex-col gap-y-10">
       <div>
         <h2 className="font-semibold text-3xl mb-2 max-sm:text-2xl">
           #3 차곡차곡 쌓이는 성장일기
@@ -40,6 +46,6 @@ export default function StoryGrownUp() {
           몰라보게 달라진 성채님의 기획서
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 }
