@@ -70,7 +70,7 @@ export default function Modal({
             <button
               className="block h-9 cursor-pointer"
               onClick={() => modalHandler()}>
-              <img src="/news/video/close.png" className="h-full" />
+              <img src="/news/video/close.webp" className="h-full" />
             </button>
           </div>
           <div className="w-full h-[480px] max-lg:h-[480px] max-md:h-[360px] max-sm:h-[240px]">
@@ -94,7 +94,7 @@ export default function Modal({
                   key={filtered}
                   className="rounded-2xl overflow-hidden cursor-pointer hover:scale-95 transition-transform"
                   onClick={() => setCurCardinal(filtered)}>
-                  <img src={`/news/video/thumbnail-${filtered}.jpg`} />
+                  <img src={`/news/video/thumbnail-${filtered}.webp`} />
                   <span className="pt-2 block pl-2 text-sm">
                     [BAMP{filtered}기 홍보영상]
                   </span>

@@ -17,22 +17,13 @@ export function Component() {
         animate={{ opacity: 1, y: -5 }}
         transition={{ duration: 0.3 }}>
         <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
-          <img className="w-52 max-sm:hidden" src="/credit/credit-boy.png" />
-
-          <div className="hidden relative max-sm:block mx-auto">
-            <img className="w-52" src="/credit/credit-speechballon-small.png" />
-          </div>
-
-          <div className="relative">
-            <img
-              className="w-52 max-sm:hidden"
-              src="/credit/credit-speechballon-big.png"
-            />
-          </div>
-
           <img
-            className="hidden w-52 max-sm:block max-sm:mx-auto max-sm:mt-5"
-            src="/credit/credit-boy.png"
+            className="w-[480px] max-sm:hidden"
+            src="/credit/credit-boy.webp"
+          />
+          <img
+            className="w-[300px] hidden max-sm:block mx-auto"
+            src="/credit/credit-boy-mobile.webp"
           />
         </div>
 
@@ -41,7 +32,7 @@ export function Component() {
         <section className="mt-14 max-w-[50rem] max-md:w-11/12 max-sm:w-10/12 mx-auto flex flex-col gap-y-20">
           <div className="flex gap-x-10 max-sm:flex-col">
             <img
-              src="/credit/bamsaneung/bamsaneung-heart.png"
+              src="/credit/bamsaneung/bamsaneung-heart.webp"
               className="w-96 max-sm:w-full"
             />
             <div className="flex flex-col justify-center gap-y-5 max-sm:w-full max-sm:mt-8">

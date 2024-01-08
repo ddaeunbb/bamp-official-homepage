@@ -31,16 +31,19 @@ export default function HistoryBamdi() {
 
       <div className="mt-7 border-[3px] border-black rounded-[5px] p-10 max-md:py-4 max-md:px-0">
         <div className="flex gap-x-5 max-md:hidden">
-          <img src="/career/history/history-bamdi.png" className="h-96" />
+          <img src="/career/history/history-bamdi.webp" className="h-96" />
           <img
-            src="/career/history/history-bamdi-detail.png"
+            src="/career/history/history-bamdi-detail.webp"
             className="h-96"
           />
         </div>
         <div className="max-md:flex flex-col items-center hidden py-5 gap-y-7">
-          <img src="/career/history/history-bamdi.png" className="w-72" />
           <img
-            src="/career/history/history-bamdi-detail-mobile.png"
+            src="/career/history/history-bamdi-mobile.webp"
+            className="w-72"
+          />
+          <img
+            src="/career/history/history-bamdi-detail-mobile.webp"
             className="w-72"
           />
         </div>

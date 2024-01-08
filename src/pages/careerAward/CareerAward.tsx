@@ -21,23 +21,15 @@ export function Component() {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: -5 }}
         transition={{ duration: 0.3 }}>
-        <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
-          <div className="hidden relative max-sm:block mx-auto">
-            <img
-              className="w-52"
-              src="/career/award/award-speechballon-small.png"
-            />
-          </div>
+        <div className="pt-4 w-screen flex justify-center max-sm:flex-col">
           <img
-            className="w-60 max-sm:mx-auto max-sm:w-56"
-            src="/career/award/career-girl.png"
+            className="w-[480px] max-sm:hidden"
+            src="/career/award/career-girl.webp"
           />
-          <div className="relative">
-            <img
-              className="w-52 max-sm:hidden"
-              src="/career/award/award-speechballon-big.png"
-            />
-          </div>
+          <img
+            className="w-[300px] hidden max-sm:block mx-auto"
+            src="/career/award/career-girl-mobile.webp"
+          />
         </div>
 
         {RECENT_YEARS.map((year, idx) => (

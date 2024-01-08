@@ -16,11 +16,11 @@ export default function HistoryBirth() {
 
         <div className="mt-7 border-black border-[3px] flex justify-center items-center py-8 rounded-[5px]">
           <img
-            src="/career/history/history-logo.png"
+            src="/career/history/history-logo.webp"
             className="max-w-md max-sm:max-w-xs max-sm:hidden"
           />
           <img
-            src="/career/history/history-logo-mobile.png"
+            src="/career/history/history-logo-mobile.webp"
             className="hidden max-sm:block max-sm:w-56"
           />
         </div>

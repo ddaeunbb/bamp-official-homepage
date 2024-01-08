@@ -41,7 +41,7 @@ export default function StoryGrownUp() {
       </div>
 
       <div>
-        <img className="rounded-lg" src="/news/story/story-grownup.png" />
+        <img className="rounded-lg" src="/news/story/story-grownup.webp" />
         <span className="text-sm font-normal text-center block mt-3 text-[#999999]">
           몰라보게 달라진 성채님의 기획서
         </span>
