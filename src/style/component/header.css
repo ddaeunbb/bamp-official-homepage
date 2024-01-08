@@ -11,3 +11,13 @@
 .grow {
   @apply h-32;
 }
+
+.no-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: hidden;
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}

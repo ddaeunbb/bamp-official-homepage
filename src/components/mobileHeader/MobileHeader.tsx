@@ -11,7 +11,15 @@ export default function MobileHeader() {
   const [tab3, setTab3] = useState<boolean>(false);
 
   useEffect(() => {
+    const body = document.body;
+    if (isHamburgerOpen) {
+      body.classList.add('no-scroll');
+    } else {
+      body.classList.remove('no-scroll');
+    }
+
     return () => {
+      body.classList.remove('no-scroll');
       setTab1(false);
       setTab2(false);
       setTab3(false);
@@ -43,7 +51,7 @@ export default function MobileHeader() {
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ duration: 0.3 }}
-            className="w-screen h-screen bg-defaultYellow fixed z-50 justify-center items-center text-center max-sm:flex hidden">
+            className="w-screen h-screen bg-defaultYellow fixed z-50 justify-center items-center text-center max-sm:flex hidden overflow-hidden">
             <button
               className="absolute right-8 top-8"
               onClick={() => setIsHamburgerOpen(false)}>
