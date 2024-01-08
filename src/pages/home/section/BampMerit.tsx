@@ -33,13 +33,13 @@ export default function BampMerit() {
             className="gap-x-16 flex justify-between max-md:flex-col max-lg:gap-x-10"
             role="첫번째 강점">
             <img
-              className="w-96"
+              className="w-96 max-sm:w-72 mx-auto"
               src="/home/since2006.gif"
-              alt="상을 들고 웃고있는 밤프인"
+              alt="브이를 흔드는 밤프인"
             />
             <div className="w-96 flex flex-col justify-center items-center gap-y-8 max-md:gap-y-4">
               <img
-                className="w-72"
+                className="w-72 max-sm:w-60"
                 srcSet="/home/since2006.webp"
                 alt="2006년부터"
               />
@@ -64,12 +64,16 @@ export default function BampMerit() {
               </Link>
             </div>
             <img
-              className="w-96"
+              className="w-96 max-sm:w-72 mx-auto"
               src="/home/500people.gif"
               alt="웃고 서있는 두 명의 밤프인"
             />
             <div className="w-96 hidden flex-col justify-center items-center max-md:flex max-md:gap-y-4">
-              <img className="w-72" srcSet="/home/500people.webp" alt="500명" />
+              <img
+                className="w-72 max-sm:w-60"
+                srcSet="/home/500people.webp"
+                alt="500명"
+              />
               <span className="text-lg font-bold">밤프와 함께한 사람들</span>
               <Link to={PATH.newsStory} className="mt-2">
                 <MoreBtn />
@@ -83,13 +87,13 @@ export default function BampMerit() {
             className="flex justify-between max-md:flex-col gap-x-16 max-lg:gap-x-10"
             role="세번째 강점">
             <img
-              className="w-96"
+              className="w-96 max-sm:w-72 mx-auto"
               src="/home/award.gif"
               alt="상을 들고 웃고있는 밤프인"
             />
             <div className="w-96 flex flex-col justify-center items-center gap-y-8 max-md:gap-y-4">
               <img
-                className="w-72"
+                className="w-72 max-sm:w-60"
                 src="/home/200times.webp"
                 alt="200회 이상"
               />
