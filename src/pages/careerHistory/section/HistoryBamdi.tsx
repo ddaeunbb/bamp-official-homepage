@@ -7,11 +7,11 @@ export default function HistoryBamdi() {
         <h2 className="text-2xl font-semibold">밤프의 마스코트: 밤디</h2>
         <div className="flex flex-col mt-3 font-normal">
           <span className="inline-block">
-            귀여운 밤프의 마스코트, ‘밤디'를 소개합니다! 밤디는 밤프의 로고를 본
-            따 만들어졌으며,
+            귀여운 밤프의 마스코트, ‘밤디'를 소개합니다! 밤디는 밤프의 로고를
+            본떠 만들어졌으며,
           </span>
           <span className="inline-block">
-            우리와 같은 대학생입니다. 어느덧 5년 째 밤프와 함께하는, 할 땐하고
+            우리와 같은 대학생입니다. 어느덧 5년째 밤프와 함께하는, 할 땐 하고
             놀 땐 노는 열정 넘치는 친구랍니다.
           </span>
         </div>

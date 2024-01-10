@@ -7,7 +7,7 @@ export default function HistorySymbol() {
         <h2 className="text-2xl font-semibold">밤프의 상징, 로고</h2>
         <div className="mt-3 flex flex-col font-normal">
           <span className="inline-block">
-            밤프의 로고는 심볼마크와 로고타입으로 이루어져있으며 밤프와 연관된
+            밤프의 로고는 심벌마크와 로고타입으로 이루어져 있으며 밤프와 연관된
             모든 커뮤니케이션에 사용됩니다.
           </span>
           <span className="inline-block">
@@ -15,7 +15,7 @@ export default function HistorySymbol() {
             아이덴티티를 표현했습니다.
           </span>
           <span className="inline-block">
-            특히 윗면의 노란 색은 언제나 상자 속엔 반짝이는 아이디어가 숨겨져
+            특히 윗면의 노란색은 언제나 상자 속엔 반짝이는 아이디어가 숨겨져
             있음을 의미합니다.
           </span>
           <span className="inline-block">

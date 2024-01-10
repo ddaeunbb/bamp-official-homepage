@@ -18,7 +18,7 @@ export function Component() {
         transition={{ duration: 0.3 }}>
         <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
           <img
-            className="w-[480px] max-sm:hidden"
+            className="w-[600px] max-sm:hidden"
             src="/credit/credit-boy.webp"
             alt="팔을 벌리고 있는 캐릭터"
           />
@@ -50,7 +50,7 @@ export function Component() {
               </div>
               <span>현직자 세미나, 공식 홈페이지 제작, 운영지원까지</span>
               <div className="flex flex-col">
-                <span>활동기수의 성장을 위해 필요한 모든 서포트를</span>
+                <span>활동 기수의 성장을 위해 필요한 모든 서포트를</span>
                 <span>제공하고 있답니다.</span>
               </div>
             </div>
