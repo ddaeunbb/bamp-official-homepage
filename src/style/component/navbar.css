@@ -1,5 +1,5 @@
 .navbar {
-  @apply w-60 h-[52px] bg-white border-l-2 border-black max-sm:grow;
+  @apply w-60 h-11 bg-white border-l-2 border-black max-sm:grow;
 }
 
 .navbar:first-child {

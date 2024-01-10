@@ -7,13 +7,13 @@ interface TabProps {
 
 export default function Tab({ title, tabNames }: TabProps) {
   return (
-    <div className="text-center">
+    <div className="text-center pt-2">
       <Link to={tabNames[0].path}>
         <span className="hover:font-bold font-bold max-md:text-sm">
           {title}
         </span>
       </Link>
-      <ul className="pt-4 text-sm flex flex-col gap-y-3">
+      <ul className="pt-6 text-sm flex flex-col gap-y-3">
         {tabNames.map((value) => {
           const { name, path } = value;
           return (

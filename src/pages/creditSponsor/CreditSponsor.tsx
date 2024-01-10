@@ -51,7 +51,7 @@ export function Component() {
         transition={{ duration: 0.3 }}>
         <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
           <img
-            className="w-[480px] max-sm:hidden"
+            className="w-[600px] max-sm:hidden"
             src="/credit/credit-boy.webp"
             alt="팔을 벌리고 있는 캐릭터"
           />
@@ -66,22 +66,27 @@ export function Component() {
 
         <section className="mt-14 max-w-[50rem] max-md:w-11/12 max-sm:w-10/12 mx-auto flex flex-col gap-y-12">
           <div className="flex flex-col justify-center text-center">
-            <h2 className="font-extrabold text-3xl max-sm:text-xl">
-              누구나 할 수 있기에, WHO ￦입니다.
-            </h2>
+            <div className="flex justify-center gap-x-2 max-sm:flex-col">
+              <h2 className="font-extrabold text-3xl max-sm:text-2xl">
+                누구나 할 수 있기에,
+              </h2>
+              <h2 className="font-extrabold text-3xl max-sm:text-2xl">
+                WHO ￦입니다.
+              </h2>
+            </div>
             <span className="mt-4 text-sm text-gray-400">
               2023.12 기준 후원자 분들
             </span>
           </div>
 
-          <div className="flex justify-center gap-x-10">
+          <div className="flex justify-center gap-x-10 max-sm:flex-col">
             <img
-              className="h-64 self-center max-sm:h-28"
+              className="w-64 self-center max-sm:w-36"
               src="/credit/sponsor/sponser-greet-bamdi.webp"
               alt="인사하는 밤디"
             />
-            <div className="flex gap-x-10 max-sm:text-sm max-sm:gap-x-3">
-              <div className="font-semibold flex flex-col justify-center gap-y-3">
+            <div className="flex gap-x-14 max-sm:text-sm max-sm:gap-x-3 max-sm:mx-auto max-sm:mt-12">
+              <div className="font-semibold flex flex-col justify-center gap-y-6 text-lg">
                 <h2>19기</h2>
                 <h2>20기</h2>
                 <h2>22기</h2>
@@ -93,13 +98,13 @@ export function Component() {
                 <h2>31기</h2>
                 <h2>32기</h2>
               </div>
-              <div className="flex flex-col justify-center gap-y-3">
+              <div className="flex flex-col justify-center gap-y-6 text-lg">
                 <h2>심인용</h2>
                 <h2>최광래</h2>
                 <h2>강수진 문다솜</h2>
                 <h2>김진우 장홍성</h2>
                 <h2>김진영 김준용</h2>
-                <h2>이지예 강하림</h2>
+                <h2>이지예 김하림</h2>
                 <h2>동주용 이승수 최규환</h2>
                 <h2>박준석</h2>
                 <h2>이서현</h2>
@@ -115,9 +120,19 @@ export function Component() {
             <span className="font-normal text-sm mt-4">
               밤프를 위한 소중한 후원 감사드립니다.
             </span>
+            <div className="my-6 hidden max-sm:flex w-full h-[168px] items-center gap-y-4 flex-col justify-center rounded-[10px] bg-[#F4F4F4]">
+              <h3 className="text-2xl font-bold">카카오뱅크 정아인</h3>
+              <h3 className="text-2xl font-bold">7979-59-34529</h3>
+              <span>예금주명은 '기수+성함'으로 남겨주세요.</span>
+            </div>
             <img
-              className="mt-8 w-8/12 max-sm:w-10/12 mx-auto"
-              src="/credit/sponsor/sponser-pig.webp"
+              className="hidden max-sm:block"
+              src="/credit/sponsor/sponsor-pig-mobile.webp"
+              alt="돼지 저금통"
+            />
+            <img
+              className="mt-8 w-8/12 max-sm:w-10/12 mx-auto max-sm:hidden"
+              src="/credit/sponsor/sponsor-pig.webp"
               alt="돼지 저금통"
             />
             <button

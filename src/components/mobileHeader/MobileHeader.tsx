@@ -47,9 +47,9 @@ export default function MobileHeader() {
       <AnimatePresence>
         {isHamburgerOpen && (
           <motion.div
-            initial={{ x: '-100%' }}
+            initial={{ x: '100%' }}
             animate={{ x: 0 }}
-            exit={{ x: '-100%' }}
+            exit={{ x: '100%' }}
             transition={{ duration: 0.3 }}
             className="w-screen h-screen bg-defaultYellow fixed z-50 justify-center items-center text-center max-sm:flex hidden overflow-hidden">
             <button

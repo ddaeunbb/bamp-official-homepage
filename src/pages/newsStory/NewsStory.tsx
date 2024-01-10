@@ -55,7 +55,7 @@ export function Component() {
         transition={{ duration: 0.3 }}>
         <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
           <img
-            className="w-[480px] max-sm:hidden"
+            className="w-[600px] max-sm:hidden"
             src="/news/story/story-boy.webp"
             alt="궁금해 하는 캐릭터"
           />

@@ -19,7 +19,7 @@ export function Component() {
         transition={{ duration: 0.3 }}>
         <div className="pt-4 w-screen flex justify-center max-sm:flex-col">
           <img
-            className="w-[480px] max-sm:hidden"
+            className="w-[600px] max-sm:hidden"
             src="/career/history/history-boy.webp"
             alt="브이를 하고 있는 캐릭터"
           />
@@ -36,15 +36,21 @@ export function Component() {
           <HistoryBirth />
           <HistorySymbol />
           <HistoryBamdi />
-          <div className="mx-auto text-sm bg-[#F4F4F4] px-5 py-2 rounded-lg text-[#707070] font-normal flex gap-x-2 items-center justify-center">
+          <div className="text-sm mx-auto  bg-[#F4F4F4] px-5 py-2 rounded-lg text-[#707070] font-normal flex gap-x-2 items-center justify-center max-md:flex-col max-md:h-[132px] max-md:gap-y-3 max-md:text-base">
             <img
               src="/career/history/history-warning.webp"
               className="w-5"
               alt="경고 아이콘"
             />
-            <div className="max-md:flex max-md:flex-col max-md:pl-2">
-              <span>*본 페이지 내의 모든 디자인 권리는 밤프에게 있습니다.</span>
-              <span>
+            <span className="max-md:hidden">
+              *본 페이지 내의 모든 디자인 권리는 밤프에게 있습니다. 밤프의 허락
+              없이 무단 수정 및 상업적 이용이 금지됩니다.
+            </span>
+            <div className="hidden max-md:block text-center">
+              <span className="block">
+                *본 페이지 내의 모든 디자인 권리는 밤프에게 있습니다.
+              </span>
+              <span className="block text-center">
                 밤프의 허락 없이 무단 수정 및 상업적 이용이 금지됩니다.
               </span>
             </div>

@@ -8,14 +8,14 @@ export default function LinkToBamsaneung() {
       <div className="hidden flex-col gap-y-1 max-md:flex max-md:items-center text-center">
         <h2 className="text-2xl font-bold">밤프가 끝나도</h2>
         <h2 className="text-2xl font-bold">밤프에 진심인 사람들</h2>
-        <Link to={PATH.creditBamsaneung} rel="tag">
+        <Link className="mt-10" to={PATH.creditBamsaneung} rel="tag">
           <MoreBtn />
         </Link>
       </div>
       <div className="flex h-full items-end">
         <img
           src="/home/home-main-bamdi.webp"
-          className="w-96 max-sm:w-80 max-sm:pt-8"
+          className="w-96 max-sm:w-80 max-sm:mt-10"
           alt="하트 날리는 밤디"
         />
       </div>
