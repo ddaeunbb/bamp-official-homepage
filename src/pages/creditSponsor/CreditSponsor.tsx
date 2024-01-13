@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import Horizon from '@/components/horizon/Horizon.tsx';
 import Navbar from '@/components/navbar/Navbar';
@@ -8,18 +8,17 @@ export function Component() {
   const [isCopyed, setIsCopyed] = useState<boolean>(false);
 
   useEffect(() => {
-    let timeoutId: number;
+    let timeId: number;
     if (isCopyed) {
-      timeoutId = setTimeout(() => setIsCopyed(false), 1000);
+      timeId = setTimeout(() => setIsCopyed(false), 1500);
     }
-
-    return () => clearTimeout(timeoutId);
+    return () => clearTimeout(timeId);
   }, [isCopyed]);
 
   const handleCopyClipBoard = async (text: string) => {
     try {
-      await navigator.clipboard.writeText(text);
       setIsCopyed(true);
+      await navigator.clipboard.writeText(text);
     } catch (error) {
       alert('클립보드 복사에 실패하였습니다.');
     }
@@ -32,19 +31,6 @@ export function Component() {
         tabNameArr={[PATH_NAME.bamsaneung, PATH_NAME.sponsor]}
       />
 
-      <AnimatePresence>
-        {isCopyed && (
-          <motion.div
-            initial={{ opacity: 0, y: 0 }}
-            animate={{ opacity: 1, y: -5 }}
-            transition={{ duration: 0.3 }}
-            exit={{ opacity: 0, y: 0 }}
-            className="w-36 flex justify-center fixed z-50 right-4 top-20 bg-defaultYellow py-2 rounded-xl border-2 border-black">
-            <span className="font-semibold">💛 복사완료 💛</span>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
       <motion.div
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: -5 }}
@@ -52,13 +38,13 @@ export function Component() {
         <div className="pt-8 w-screen flex justify-center max-sm:flex-col">
           <img
             className="w-[600px] max-sm:hidden"
-            src="/credit/credit-boy.webp"
-            alt="팔을 벌리고 있는 캐릭터"
+            src="/credit/sponsor/sponsor-boy.webp"
+            alt="확성기를 들고 있는 캐릭터"
           />
           <img
             className="w-[300px] hidden max-sm:block mx-auto"
-            src="/credit/credit-boy-mobile.webp"
-            alt="팔을 벌리고 있는 캐릭터"
+            src="/credit/sponsor/sponsor-boy-mobile.webp"
+            alt="확성기를 들고 있는 캐릭터"
           />
         </div>
 
@@ -135,15 +121,30 @@ export function Component() {
               src="/credit/sponsor/sponsor-pig.webp"
               alt="돼지 저금통"
             />
+
             <button
               onClick={() => handleCopyClipBoard('7979-59-34529')}
-              className="animate-bounce flex items-center justify-center gap-x-1 px-3 py-2 bg-defaultYellow mx-auto rounded-xl mt-8">
-              <span className="font-semibold text-sm">계좌 복사하기</span>
-              <img
-                className="w-4"
-                src="/credit/sponsor/sponsor-clipboard.webp"
-                alt="클립보드 아이콘"
-              />
+              className="flex items-center justify-center w-max mt-8 relative mx-auto">
+              <AnimatePresence>
+                {isCopyed && (
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="absolute bg-white py-3 flex items-center justify-center text-sm font-semibold gap-x-1 border-defaultYellow border rounded-3xl w-[140px]">
+                    복사 완료
+                    <img
+                      src="/credit/sponsor/sponsor-check.webp"
+                      className="w-4"
+                      alt="체크아이콘"
+                    />
+                  </motion.span>
+                )}
+              </AnimatePresence>
+              <span className=" bg-defaultYellow py-3 flex items-center justify-center text-sm font-semibold gap-x-1 border-defaultYellow border rounded-3xl w-[140px]">
+                계좌 복사하기
+              </span>
             </button>
           </div>
         </section>

@@ -1,7 +1,7 @@
 export default function Intro() {
   return (
     <section
-      className="bg-defaultYellow h-[800px] py-32 max-sm:h-[500px] max-sm:py-14"
+      className="bg-defaultYellow h-[800px] py-32 max-sm:h-auto max-sm:py-20 flex flex-col justify-center items-center"
       role="밤프의 이름 소개">
       <div className="w-screen flex flex-col items-center gap-y-2 max-sm:gap-y-1">
         <h2 className="text-xl font-bold max-sm:text-base">
