@@ -16,6 +16,8 @@ export default function Footer() {
             className="w-32"
             src="/footer/btn-apply.webp"
             alt="지원하기 버튼"
+            width={128}
+            height={57.9}
           />
         </a>
         <span className="text-neutral-500 mt-10 text-xs max-sm:hidden">
