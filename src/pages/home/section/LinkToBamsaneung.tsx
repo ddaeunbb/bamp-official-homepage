@@ -17,6 +17,8 @@ export default function LinkToBamsaneung() {
           src="/home/home-main-bamdi.webp"
           className="w-96 max-sm:w-80 max-sm:mt-10"
           alt="하트 날리는 밤디"
+          width={384}
+          height={311}
         />
       </div>
       <div className="flex flex-col gap-y-1 max-md:hidden">

@@ -17,7 +17,7 @@ export default function HistoryBamdi() {
         </div>
       </div>
 
-      <div className="mt-3 w-full bg-[#EFEFEF] rounded-[5px] py-3 px-5">
+      <div className="mt-3 w-full bg-[#FFF2AE] rounded-[5px] py-3 px-5">
         <div className="flex flex-col font-normal gap-y-1">
           <span className="font-medium inline-block">
             Q. 밤디의 머리 위가 노란색인 이유는?

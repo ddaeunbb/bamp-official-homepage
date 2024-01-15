@@ -58,22 +58,28 @@ export function Component() {
           <div className="flex flex-col justify-center text-center">
             <div className="flex justify-center gap-x-2 max-sm:flex-col">
               <h2 className="font-extrabold text-3xl max-sm:text-2xl">
-                누구나 할 수 있기에,
+                2023.12 기준
               </h2>
               <h2 className="font-extrabold text-3xl max-sm:text-2xl">
-                WHO ￦입니다.
+                OB 후원자님들
               </h2>
             </div>
-            <span className="mt-4 text-sm text-gray-400">
-              2023.12 기준 후원자 분들
-            </span>
           </div>
 
           <div className="flex justify-center gap-x-10 max-sm:flex-col">
             <img
-              className="w-64 self-center max-sm:w-36"
+              className="w-64 self-center max-sm:hidden"
               src="/credit/sponsor/sponser-greet-bamdi.webp"
               alt="인사하는 밤디"
+              width={256}
+              height={346}
+            />
+            <img
+              className="hidden max-sm:block w-[148px] self-center"
+              src="/credit/sponsor/sponser-greet-bamdi-mobile.webp"
+              alt="인사하는 밤디"
+              width={148}
+              height={199}
             />
             <div className="flex gap-x-14 max-sm:text-sm max-sm:gap-x-3 max-sm:mx-auto max-sm:mt-12">
               <div className="font-semibold flex flex-col justify-center gap-y-6 text-lg">
@@ -119,11 +125,15 @@ export function Component() {
               className="hidden max-sm:block"
               src="/credit/sponsor/sponsor-pig-mobile.webp"
               alt="돼지 저금통"
+              width={533}
+              height={408}
             />
             <img
               className="mt-8 w-8/12 max-sm:w-10/12 mx-auto max-sm:hidden"
               src="/credit/sponsor/sponsor-pig.webp"
               alt="돼지 저금통"
+              width={440}
+              height={337}
             />
 
             <button

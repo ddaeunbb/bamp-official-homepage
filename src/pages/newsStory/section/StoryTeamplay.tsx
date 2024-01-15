@@ -44,6 +44,8 @@ export default function StoryTeamplay() {
           className="rounded-lg"
           src="/news/story/story-teamplay.webp"
           alt="수상을 한 팀사진"
+          width={800}
+          height={600}
         />
         <span className="text-sm font-normal text-center block mt-3 text-[#999999]">
           소설 같은 케미, 최고의 시너지. 밤프에선 현실이 됩니다!

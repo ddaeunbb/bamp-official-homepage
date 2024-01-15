@@ -10,6 +10,7 @@ export default function BampMerit() {
         className="w-44 absolute top-10 left-10 max-md:left-1 max-lg:hidden"
         src="/home/bamp-box.gif"
         alt="박스안에 전구"
+        loading="lazy"
       />
       <img
         className="w-32 absolute top-[640px] right-10 max-lg:hidden"
@@ -36,6 +37,9 @@ export default function BampMerit() {
               className="w-96 max-sm:w-72 mx-auto"
               src="/home/since2006.gif"
               alt="브이를 흔드는 밤프인"
+              loading="lazy"
+              width={384}
+              height={384}
             />
             <div className="w-96 flex flex-col justify-center items-center gap-y-8 max-md:gap-y-4">
               <img
@@ -67,6 +71,9 @@ export default function BampMerit() {
               className="w-96 max-sm:w-72 mx-auto"
               src="/home/500people.gif"
               alt="웃고 서있는 두 명의 밤프인"
+              loading="lazy"
+              width={384}
+              height={384}
             />
             <div className="w-96 hidden flex-col justify-center items-center max-md:flex max-md:gap-y-4">
               <img
@@ -90,6 +97,8 @@ export default function BampMerit() {
               className="w-96 max-sm:w-72 mx-auto"
               src="/home/award.gif"
               alt="상을 들고 웃고있는 밤프인"
+              width={384}
+              height={384}
             />
             <div className="w-96 flex flex-col justify-center items-center gap-y-8 max-md:gap-y-4">
               <img
