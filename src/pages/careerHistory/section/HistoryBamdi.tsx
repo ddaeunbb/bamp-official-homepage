@@ -17,7 +17,7 @@ export default function HistoryBamdi() {
         </div>
       </div>
 
-      <div className="mt-3 w-full bg-[#EFEFEF] rounded-[5px] py-3 px-5">
+      <div className="mt-3 w-full bg-[#FFF2AE] rounded-[5px] py-3 px-5">
         <div className="flex flex-col font-normal gap-y-1">
           <span className="font-medium inline-block">
             Q. 밤디의 머리 위가 노란색인 이유는?
@@ -35,11 +35,15 @@ export default function HistoryBamdi() {
             src="/career/history/history-bamdi.webp"
             className="h-96"
             alt="정면의 밤디 캐릭터"
+            width={265}
+            height={384}
           />
           <img
             src="/career/history/history-bamdi-detail.webp"
             className="h-96"
             alt="밤디의 디테일 이미지"
+            width={430}
+            height={384}
           />
         </div>
         <div className="max-md:flex flex-col items-center hidden py-5 gap-y-7">
@@ -47,11 +51,15 @@ export default function HistoryBamdi() {
             src="/career/history/history-bamdi-mobile.webp"
             className="w-72"
             alt="정면의 밤디 캐릭터"
+            width={288}
+            height={417}
           />
           <img
             src="/career/history/history-bamdi-detail-mobile.webp"
             className="w-72"
             alt="밤디의 디테일 이미지"
+            width={288}
+            height={257}
           />
         </div>
       </div>

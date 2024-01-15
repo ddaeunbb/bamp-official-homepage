@@ -47,6 +47,8 @@ export default function StoryNewbieToOB() {
           className="rounded-lg"
           src="/news/story/story-newbie.webp"
           alt="광고인이 된 수료자"
+          width={800}
+          height={600}
         />
         <span className="font-normal text-sm text-center block mt-3 text-[#999999]">
           뉴비에서 광고인물까지, 모든 순간 밤프와 함께했다

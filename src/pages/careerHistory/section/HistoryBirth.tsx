@@ -19,11 +19,15 @@ export default function HistoryBirth() {
             src="/career/history/history-logo.webp"
             className="max-w-md max-sm:max-w-xs max-sm:hidden"
             alt="밤프 로고 이미지 변화"
+            width={448}
+            height={131}
           />
           <img
             src="/career/history/history-logo-mobile.webp"
             className="hidden max-sm:block max-sm:w-56"
             alt="밤프 로고 이미지 변화"
+            width={224}
+            height={344}
           />
         </div>
       </div>

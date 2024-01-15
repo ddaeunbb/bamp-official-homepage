@@ -41,6 +41,8 @@ export function Component() {
               src="/credit/bamsaneung/bamsaneung-heart.webp"
               className="w-96 max-sm:w-full"
               alt="하트를 그리는 밤사능 멤버"
+              width={384}
+              height={384}
             />
             <div className="flex flex-col justify-center gap-y-5 max-sm:w-full max-sm:mt-8">
               <div>
