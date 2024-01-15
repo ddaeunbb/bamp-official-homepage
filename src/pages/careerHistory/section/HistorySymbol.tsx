@@ -30,11 +30,15 @@ export default function HistorySymbol() {
           src="/career/history/history-logo-history.webp"
           className="w-11/12 max-sm:hidden"
           alt="밤프 로고 디테일"
+          width={727}
+          height={882}
         />
         <img
           src="/career/history/history-logo-history-mobile.webp"
           className="hidden max-sm:block w-10/12 py-5"
           alt="밤프 로고 디테일"
+          width={265}
+          height={2174}
         />
       </div>
 

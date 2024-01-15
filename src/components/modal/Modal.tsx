@@ -101,6 +101,8 @@ export default function Modal({
                   <img
                     src={`/news/video/thumbnail-${filtered}.webp`}
                     alt="유튜브썸네일"
+                    width={292}
+                    height={164}
                   />
                   <span className="pt-2 block pl-2 text-sm">
                     [BAMP{filtered}기 홍보영상]

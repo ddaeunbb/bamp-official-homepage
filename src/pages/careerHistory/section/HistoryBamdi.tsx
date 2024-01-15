@@ -35,11 +35,15 @@ export default function HistoryBamdi() {
             src="/career/history/history-bamdi.webp"
             className="h-96"
             alt="정면의 밤디 캐릭터"
+            width={265}
+            height={384}
           />
           <img
             src="/career/history/history-bamdi-detail.webp"
             className="h-96"
             alt="밤디의 디테일 이미지"
+            width={430}
+            height={384}
           />
         </div>
         <div className="max-md:flex flex-col items-center hidden py-5 gap-y-7">
@@ -47,11 +51,15 @@ export default function HistoryBamdi() {
             src="/career/history/history-bamdi-mobile.webp"
             className="w-72"
             alt="정면의 밤디 캐릭터"
+            width={288}
+            height={417}
           />
           <img
             src="/career/history/history-bamdi-detail-mobile.webp"
             className="w-72"
             alt="밤디의 디테일 이미지"
+            width={288}
+            height={257}
           />
         </div>
       </div>
