@@ -22,11 +22,15 @@ export function Component() {
             className="w-[600px] max-sm:hidden"
             src="/career/history/history-boy.webp"
             alt="브이를 하고 있는 캐릭터"
+            width={600}
+            height={300}
           />
           <img
             className="w-[300px] hidden max-sm:block mx-auto"
             src="/career/history/history-boy-mobile.webp"
             alt="브이를 하고 있는 캐릭터"
+            width={300}
+            height={350}
           />
         </div>
 
