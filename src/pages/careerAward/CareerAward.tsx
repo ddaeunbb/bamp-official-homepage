@@ -26,11 +26,15 @@ export function Component() {
             className="w-[600px] max-sm:hidden"
             src="/career/award/career-girl.webp"
             alt="상을 들고 있는 캐릭터"
+            width={600}
+            height={300}
           />
           <img
             className="w-[300px] hidden max-sm:block mx-auto"
             src="/career/award/career-girl-mobile.webp"
             alt="상을 들고 있는 캐릭터"
+            width={300}
+            height={350}
           />
         </div>
 

@@ -21,11 +21,15 @@ export function Component() {
             className="w-[600px] max-sm:hidden"
             src="/credit/credit-boy.webp"
             alt="팔을 벌리고 있는 캐릭터"
+            width={600}
+            height={300}
           />
           <img
             className="w-[300px] hidden max-sm:block mx-auto"
             src="/credit/credit-boy-mobile.webp"
             alt="팔을 벌리고 있는 캐릭터"
+            width={300}
+            height={350}
           />
         </div>
 

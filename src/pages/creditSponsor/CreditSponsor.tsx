@@ -40,11 +40,15 @@ export function Component() {
             className="w-[600px] max-sm:hidden"
             src="/credit/sponsor/sponsor-boy.webp"
             alt="확성기를 들고 있는 캐릭터"
+            width={600}
+            height={300}
           />
           <img
             className="w-[300px] hidden max-sm:block mx-auto"
             src="/credit/sponsor/sponsor-boy-mobile.webp"
             alt="확성기를 들고 있는 캐릭터"
+            width={300}
+            height={350}
           />
         </div>
 
