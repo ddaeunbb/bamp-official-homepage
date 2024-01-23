@@ -7,20 +7,18 @@ export default function Welcome() {
         alt="둥근하얀장식"
         width={1440}
         height={816}
+        data-fetchPriority="high"
       />
       <img
-        src="/home/main-image.webp"
-        className="w-full absolute z-20 bottom-24 max-lg:bottom-14 max-md:bottom-10 max-sm:hidden"
-        alt="사람들을 환영하는 밤프인들"
-        width={1440}
-        height={790}
-      />
-      <img
-        src="/home/main-image-mobile.webp"
-        className="w-full max-sm:block hidden bg-white"
-        alt="사람들을 환영하는 밤프인들"
-        width={500}
-        height={614}
+        src="/home/main-image-large.webp"
+        className="w-full absolute z-20 bottom-24 max-lg:bottom-14 max-md:bottom-10"
+        alt="Bamp people welcoming people"
+        srcSet="
+        /home/main-image-large.webp 900w,
+        /home/main-image-medium.webp 700w,
+        /home/main-image-mobile.webp 640w"
+        sizes="(max-width: 640px) 640px, (max-width: 700px) 700px, 900px"
+        data-fetchPriority="high"
       />
     </section>
   );
