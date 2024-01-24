@@ -8,7 +8,7 @@ export function Component() {
   const [isCopyed, setIsCopyed] = useState<boolean>(false);
 
   useEffect(() => {
-    let timeId: number;
+    let timeId: NodeJS.Timeout | undefined;
     if (isCopyed) {
       timeId = setTimeout(() => setIsCopyed(false), 1500);
     }
