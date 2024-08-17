@@ -1,4 +1,6 @@
 export const YOUTUBE_TITLE = {
+  '37기-번외':
+    '[BAMP 37기 Play List] 내가 가진 건 열정 뿐 | 열정 하나로 떡하니 붙는 지원서 쓰기',
   '37': '함께라서 더욱 빛나는 우리의 열정, 밤프',
   '36': '우리의 밤프는 낮보다 뜨겁다',
   '35': 'Mission BAMPossible: 가장 열정적일 작전',
