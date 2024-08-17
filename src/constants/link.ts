@@ -1,5 +1,5 @@
 export const BAMP_LINK = {
-  mail: 'bamp35@naver.com',
+  mail: 'bamp_37@naver.com',
   instagram: 'https://www.instagram.com/gobamp/',
   youtube: 'https://www.youtube.com/@bamp3754',
   cafe: 'https://cafe.naver.com/gobamp',
@@ -8,6 +8,7 @@ export const BAMP_LINK = {
 } as const;
 
 export const YOUTUBE_LINK = {
+  '37': 'https://youtube.com/shorts/LLWSRnjxnk8?si=WOwE3lEx10m6_LV2',
   '36': 'https://youtu.be/AMPxNG6WOmY?si=F709J03HmiDU8cMn',
   '35': 'https://youtu.be/_rDHC3L8isU?si=9r2iE3IJkcO6LQkz',
   '34': 'https://youtu.be/aDJOK9WoMMQ?si=mWU7pcJZp2ud6HvX',
