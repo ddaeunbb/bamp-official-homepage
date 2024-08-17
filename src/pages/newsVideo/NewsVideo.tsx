@@ -35,7 +35,7 @@ export function Component() {
           transition={{ duration: 0.3 }}>
           <ul className="mt-14 max-w-[60rem] max-md:w-11/12 max-sm:w-3/4 mx-auto grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-x-6 gap-y-6 max-md:gap-x-3">
             <VideoThumbnail
-              cardinal="37*"
+              cardinal="37-1"
               modalHandler={setIsModalOpen}
               cardinalHandler={setCurCardinal}
             />
