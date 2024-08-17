@@ -8,7 +8,7 @@ export const BAMP_LINK = {
 } as const;
 
 export const YOUTUBE_LINK = {
-  '37기-번외': 'https://youtu.be/Nzk0P5ijxbY?si=q9dlVwj735EQD2D2',
+  '37*': 'https://youtu.be/Nzk0P5ijxbY?si=q9dlVwj735EQD2D2',
   '37': 'https://youtube.com/shorts/LLWSRnjxnk8?si=WOwE3lEx10m6_LV2',
   '36': 'https://youtu.be/AMPxNG6WOmY?si=F709J03HmiDU8cMn',
   '35': 'https://youtu.be/_rDHC3L8isU?si=9r2iE3IJkcO6LQkz',
