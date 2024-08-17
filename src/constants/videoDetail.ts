@@ -1,4 +1,5 @@
 export const YOUTUBE_TITLE = {
+  '37': '함께라서 더욱 빛나는 우리의 열정, 밤프',
   '36': '우리의 밤프는 낮보다 뜨겁다',
   '35': 'Mission BAMPossible: 가장 열정적일 작전',
   '34': 'BAMPing : 공모전에 대한 열정을 불어넣다',
