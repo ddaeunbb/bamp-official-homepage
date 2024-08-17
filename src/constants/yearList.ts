@@ -1,11 +1,11 @@
 const NOW = new Date();
-const YEAR = NOW.getFullYear() - 1; // 2023년으로 계산
+const YEAR = NOW.getFullYear() - 1; // 2024년으로 계산
 const RECENT = 5;
 const LAST = 2006;
 
 // 아래는 로직을 수정하지 않아도 매년에 맞춰 계산됩니다.
 
-// 최근 5년을 담은 배열 [2023, 2022, 2021...]
+// 최근 5년을 담은 배열 [2024, 2023, 2022, 2021...]
 export const RECENT_YEARS: string[] = Array.from({ length: RECENT }, (_, i) =>
   (YEAR - i).toString(),
 );
