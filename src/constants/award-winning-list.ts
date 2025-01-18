@@ -265,6 +265,7 @@ interface AwardSetType {
 }
 
 export const AWARD_SET: AwardSetType = {
+  '2025': AWARD_2025,
   '2024': AWARD_2024,
   '2023': AWARD_2023,
   '2022': AWARD_2022,
