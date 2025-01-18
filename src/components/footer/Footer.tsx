@@ -21,7 +21,7 @@ export default function Footer() {
           />
         </a>
         <span className="text-neutral-500 mt-10 text-xs max-sm:hidden">
-          @BAMP 2024 All rights reserved
+          @BAMP 2025 All rights reserved
         </span>
       </div>
       <div
@@ -75,7 +75,7 @@ export default function Footer() {
         </a>
       </div>
       <span className="hidden text-neutral-500 text-xs max-sm:block mt-12">
-        @BAMP 2024 All rights reserved
+        @BAMP 2025 All rights reserved
       </span>
     </footer>
   );
