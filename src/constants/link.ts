@@ -1,13 +1,14 @@
 export const BAMP_LINK = {
-  mail: 'bamp_37@naver.com',
+  mail: 'bamp_39@naver.com',
   instagram: 'https://www.instagram.com/gobamp/',
   youtube: 'https://www.youtube.com/@bamp3754',
   cafe: 'https://cafe.naver.com/gobamp',
   blog: 'https://blog.naver.com/12bamp',
-  apply: 'https://blog.naver.com/12bamp/223746760124',
+  apply: 'https://blog.naver.com/12bamp/223958139284',
 } as const;
 
 export const YOUTUBE_LINK = {
+  '39': 'https://youtu.be/k0Qy2ueprEM',
   '38': 'https://www.youtube.com/watch?v=mjQDY5tHLjs',
   '37-1': 'https://youtu.be/Nzk0P5ijxbY?si=q9dlVwj735EQD2D2',
   '37': 'https://youtube.com/shorts/LLWSRnjxnk8?si=WOwE3lEx10m6_LV2',
