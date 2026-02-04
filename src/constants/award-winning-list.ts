@@ -1,9 +1,12 @@
 // [상이름, 대회이름] 순으로 입력해주세요.
 
+export const AWARD_2026 = [['40기', '채워나갈 40기를 모집합니다!']];
+
 export const AWARD_2025 = [
   ['우수상', '제5회 PA 크리에이티브 어워드'],
   ['지역입선', '2025 KOSAC 대한민국 대학생 광고대회'],
   ['코삭챌린저상(4)', '2025 KOSAC 대한민국 대학생 광고대회'],
+  ['대상', '2025 XYLO KPOP 루키 브랜딩 전략 인턴십 연계 공모전'],
 ];
 
 export const AWARD_2024 = [
@@ -269,6 +272,7 @@ interface AwardSetType {
 }
 
 export const AWARD_SET: AwardSetType = {
+  '2026': AWARD_2026,
   '2025': AWARD_2025,
   '2024': AWARD_2024,
   '2023': AWARD_2023,
