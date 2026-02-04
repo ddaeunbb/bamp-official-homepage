@@ -1,5 +1,5 @@
 export const BAMP_LINK = {
-  mail: 'bamp_39@naver.com',
+  mail: 'bamp_40@naver.com',
   instagram: 'https://www.instagram.com/gobamp/',
   youtube: 'https://www.youtube.com/@bamp3754',
   cafe: 'https://cafe.naver.com/gobamp',
