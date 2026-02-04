@@ -4,7 +4,7 @@ export const BAMP_LINK = {
   youtube: 'https://www.youtube.com/@bamp3754',
   cafe: 'https://cafe.naver.com/gobamp',
   blog: 'https://blog.naver.com/12bamp',
-  apply: 'https://blog.naver.com/12bamp/223958139284',
+  apply: 'https://blog.naver.com/12bamp/224167978928',
 } as const;
 
 export const YOUTUBE_LINK = {
