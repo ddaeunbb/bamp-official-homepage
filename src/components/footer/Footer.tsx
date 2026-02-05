@@ -45,7 +45,7 @@ export default function Footer() {
           />
         </a>
         <a
-          target="_blankt"
+          target="_blank"
           href={BAMP_LINK.youtube}
           role="밤프유튜브로 연결된 버튼"
           rel="external">
