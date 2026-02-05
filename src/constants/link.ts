@@ -8,6 +8,7 @@ export const BAMP_LINK = {
 } as const;
 
 export const YOUTUBE_LINK = {
+  '40': 'https://youtu.be/Prj07UeKu50',
   '39': 'https://youtu.be/k0Qy2ueprEM',
   '38': 'https://www.youtube.com/watch?v=mjQDY5tHLjs',
   '37-1': 'https://youtu.be/Nzk0P5ijxbY?si=q9dlVwj735EQD2D2',
