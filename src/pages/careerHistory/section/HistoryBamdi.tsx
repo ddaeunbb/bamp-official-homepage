@@ -11,7 +11,7 @@ export default function HistoryBamdi() {
             본떠 만들어졌으며,
           </span>
           <span className="inline-block">
-            우리와 같은 대학생입니다. 어느덧 5년째 밤프와 함께하는, 할 땐 하고
+            우리와 같은 대학생입니다. 어느덧 9년째 밤프와 함께하는, 할 땐 하고
             놀 땐 노는 열정 넘치는 친구랍니다.
           </span>
         </div>
