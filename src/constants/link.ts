@@ -1,10 +1,10 @@
 export const BAMP_LINK = {
-  mail: 'bamp_40@naver.com',
+  mail: 'bamp_41th@gmail.com',
   instagram: 'https://www.instagram.com/gobamp/',
   youtube: 'https://www.youtube.com/@bamp3754',
   cafe: 'https://cafe.naver.com/gobamp',
   blog: 'https://blog.naver.com/12bamp',
-  apply: 'https://blog.naver.com/12bamp/224167978928',
+  apply: 'https://blog.naver.com/12bamp/224370119167',
 } as const;
 
 export const YOUTUBE_LINK = {
